@@ -11,9 +11,9 @@ a{
 
 .navigation > ul>li{
     list-style: none;
-    display:inline-block;
-    height:100vh;
-    font-size:25px;
+    display: inline-block;
+    height: 100vh;
+    font-size: 25px;
 }
 
 .selected{
