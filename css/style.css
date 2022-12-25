@@ -27,7 +27,7 @@ a{
 }
 
 header{
-    background-color:  #080dcc;
+    background-color:  #251749;
     height:200px;
 }
 .navigation >ul>li>a:hover{
@@ -38,3 +38,6 @@ header{
     border-left-style: solid;
 }
 
+body{
+    background-color: #FFFBEB;
+}
