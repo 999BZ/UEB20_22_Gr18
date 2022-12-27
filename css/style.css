@@ -55,3 +55,18 @@ nav{
 body{
     background-color: #FFFBEB;
 }
+
+#top10 td{
+    padding: 20px 0 20px 0;
+}
+
+#top10 td img{
+    border-radius:12px;
+    box-shadow:  -27px 27px 54px #b8b8b8,
+             27px -27px 54px #fafafa;
+}
+
+#top10> table>tr>td{
+    width:100%;
+    text-align: center;
+}
