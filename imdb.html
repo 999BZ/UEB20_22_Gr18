@@ -23,30 +23,87 @@
 		</nav>	
 	</header>
 	
-	<div id="top10">
-		<table>
-			<tr>
-				<td><a href="selected.html"><img src="assets/img/IMDB/shawshank_redemption.jpg" alt="The Shawshank Redemption (1994)" height="200px" width = "130px"></a></td>
-				<td><a href="selected.html"><img src="assets/img/IMDB/the_godfather.jpg" alt="The Godfather (1972)" height="200px" width = "130px"></a></td>
-				<td><a href="selected.html"><img src="assets/img/IMDB/dark_knight.jpg" alt="The Dark Knight (2008)" height="200px" width = "130px"></a></td>
-				<td><a href="selected.html"><img src="assets/img/IMDB/the_godfather2.jpg" alt="The Godfather Part II (1974)" height="200px" width = "130px"></a></td>
-				<td><a href="selected.html"><img src="assets/img/IMDB/12_angryman.jpg" alt="12 Angry Men (1957)" height="200px" width = "130px"></a></td>
-			</tr>
-			<tr>
-				<td><a href="selected.html"><img src="assets/img/IMDB/schindlers_list.jpg" alt="Schindler's List (1993)" height="200px" width = "130px"></a></td>
-				<td><a href="selected.html"><img src="assets/img/IMDB/lord_of_the_rings.jpg" alt="The Lord of the Rings: The Return of the King (2003)" height="200px" width = "130px"></a></td>
-				<td><a href="selected.html"><img src="assets/img/IMDB/pulp_fiction.jpg" alt="Pulp Fiction (1994)" height="200px" width = "130px"></a></td>
-				<td><a href="selected.html"><img src="assets/img/IMDB/lord_rings_fellowing_ring.jpg" alt="The Lord of the Rings: The Fellowship of the Ring (2001)" height="200px" width = "130px"></a></td>
-				<td><a href="selected.html"><img src="assets/img/IMDB/thegoodBadUgly.jpg" alt="The Good, the Bad and the Ugly (1966)" height="200px" width = "130px"></a></td>
-			</tr>
-		
-
-		</table>
-
-
-
+	<ul class="nav nav-tabs" id="myTab" role="tablist">
+		<li class="nav-item" role="presentation">
+		  <button class="nav-link active" id="top10imdb" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Top 10</button>
+		</li>
+		<li class="nav-item" role="presentation">
+			<button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Action</button>
+		  </li>
+	  </ul>
+	  <div class="tab-content" id="myTabContent">
+		<div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0"><div class="imdbs">
+		<div class="imdb"><figure class="figtop10imdb"><a href="selected.html"><img class="img_top10imdb" src="assets/img/IMDB/shawshank_redemption.jpg" alt="The Shawshank Redemption (1994)" height="200px" width = "130px">
+			<figcaption>The Shawshank Redemption (1994)</figcaption>
+			</a></figure></div>
+		<div class="imdb"><figure class="figtop10imdb"><a href="selected.html"><img class="img_top10imdb" src="assets/img/IMDB/the_godfather.jpg" alt="The Godfather (1972)" height="200px" width = "130px">
+			<figcaption>The Godfather (1972)</figcaption>
+			</a></figure></div>
+		<div class="imdb"><figure class="figtop10imdb"><a href="selected.html"><img class="img_top10imdb" src="assets/img/IMDB/dark_knight.jpg" alt="The Dark Knight (2008)" height="200px" width = "130px">
+			<figcaption>The Dark Knight (2008)</figcaption>
+			</a></figure></div>
+		<div class="imdb"><figure class="figtop10imdb"><a href="selected.html"><img class="img_top10imdb" src="assets/img/IMDB/the_godfather2.jpg" alt="The Godfather Part II (1974)" height="200px" width = "130px">
+			<figcaption>The Godfather Part II (1974)</figcaption>
+			</a></figure></div>
+		<div class="imdb"><figure class="figtop10imdb"><a href="selected.html"><img class="img_top10imdb" src="assets/img/IMDB/12_angryman.jpg" alt="12 Angry Men (1957)" height="200px" width = "130px">
+			<figcaption>12 Angry Men (1957)</figcaption>
+			</a></figure></div>
 	</div>
-
+	<div class="imdbs" style="margin-top:10%">
+		<div class="imdb"><figure class="figtop10imdb"><a href="selected.html"><img class="img_top10imdb" src="assets/img/IMDB/schindlers_list.jpg" alt="Schindler's List (1993)" height="200px" width = "130px">
+			<figcaption>Schindler's List (1993)</figcaption>
+			</a></figure></div>
+		<div class="imdb"><figure class="figtop10imdb"><a href="selected.html"><img class="img_top10imdb" src="assets/img/IMDB/lord_of_the_rings.jpg" alt="The Lord of the Rings: The Return of the King (2003)" height="200px" width = "130px">
+			<figcaption>The Lord of the Rings: The Return of the King (2003)</figcaption>
+			</a></figure></div>
+		<div class="imdb"><figure class="figtop10imdb"><a href="selected.html"><img class="img_top10imdb" src="assets/img/IMDB/pulp_fiction.jpg" alt="Pulp Fiction (1994)" height="200px" width = "130px">
+			<figcaption>Pulp Fiction (1994)</figcaption>
+			</a></figure></div>
+		<div class="imdb"><figure class="figtop10imdb"><a href="selected.html"><img class="img_top10imdb" src="assets/img/IMDB/lord_rings_fellowing_ring.jpg" alt="The Lord of the Rings: The Fellowship of the Ring (2001)" height="200px" width = "130px">
+			<figcaption>The Lord of the Rings: The Fellowship of the Ring (2001)</figcaption>
+			</a></figure></div>
+		<div class="imdb"><figure class="figtop10imdb"><a href="selected.html"><img class="img_top10imdb" src="assets/img/IMDB/thegoodBadUgly.jpg" alt="The Good, the Bad and the Ugly (1966)" height="200px" width = "130px">
+			<figcaption>The Good, the Bad and the Ugly (1966)</figcaption>
+			</a></figure></div>
+	</div></div>
+	<div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0"><div class="imdbs">
+		<div class="imdb"><figure class="figtop10imdb"><a href="selected.html"><img class="img_top10imdb" src="assets/img/IMDB/dark_knight.jpg" alt="The Dark Knight (2008)" height="200px" width = "130px">
+			<figcaption>The Dark Knight (2008)</figcaption>
+			</a></figure></div>
+		<div class="imdb"><figure class="figtop10imdb"><a href="selected.html"><img class="img_top10imdb" src="assets/img/IMDB/lord_rings_fellowing_ring.jpg" alt="The Lord of the Rings: The Fellowship of the Ring (2001)" height="200px" width = "130px">
+			<figcaption>The Lord of the Rings: The Fellowship of the Ring (2001)</figcaption>
+			</a></figure></div>
+		<div class="imdb"><figure class="figtop10imdb"><a href="selected.html"><img class="img_top10imdb" src="assets/img/IMDB/inception.jpg" alt="Inception (2010)" height="200px" width = "130px">
+			<figcaption>Inception (2010)</figcaption>
+			</a></figure></div>
+		<div class="imdb"><figure class="figtop10imdb"><a href="selected.html"><img class="img_top10imdb" src="assets/img/IMDB/lord_rings_two_towers.jpg" alt="The Lord of the Rings: The Two Towers (2002)" height="200px" width = "130px">
+			<figcaption>The Lord of the Rings: The Two Towers (2002)</figcaption>
+			</a></figure></div>
+		<div class="imdb"><figure class="figtop10imdb"><a href="selected.html"><img class="img_top10imdb" src="assets/img/IMDB/lord_rings_fellowing_ring.jpg" alt="The Lord of the Rings: The Fellowship of the Ring (2001)" height="200px" width = "130px">
+			<figcaption>The Lord of the Rings: The Fellowship of the Ring (2001)</figcaption>
+			</a></figure></div>
+	</div>
+	<div class="imdbs" style="margin-top:10%">
+		<div class="imdb"><figure class="figtop10imdb"><a href="selected.html"><img class="img_top10imdb" src="assets/img/IMDB/matrix.jpg" alt="The Matrix (1999)" height="200px" width = "130px">
+			<figcaption>The Matrix (1999)</figcaption>
+			</a></figure></div>
+		<div class="imdb"><figure class="figtop10imdb"><a href="selected.html"><img class="img_top10imdb" src="assets/img/IMDB/starwars_empireStrikeBack.jpg" alt="Star Wars: Episode V - The Empire Strikes Back (1980)" height="200px" width = "130px">
+			<figcaption>Star Wars: Episode V - The Empire Strikes Back (1980)</figcaption>
+			</a></figure></div>
+		<div class="imdb"><figure class="figtop10imdb"><a href="selected.html"><img class="img_top10imdb" src="assets/img/IMDB/sita_ramam.jpg" alt="Sita Ramam (2022)" height="200px" width = "130px">
+			<figcaption>Sita Ramam (2022)</figcaption>
+			</a></figure></div>
+		<div class="imdb"><figure class="figtop10imdb"><a href="selected.html"><img class="img_top10imdb" src="assets/img/IMDB/terminator2.jpg" alt="Terminator 2: Judgment Day (1991)" height="200px" width = "130px">
+			<figcaption>Terminator 2: Judgment Day (1991)</figcaption>
+			</a></figure></div>
+		<div class="imdb"><figure class="figtop10imdb"><a href="selected.html"><img class="img_top10imdb" src="assets/img/IMDB/starwars_newhope.jpg" alt="Star Wars: Episode IV - A New Hope (1977)" height="200px" width = "130px">
+			<figcaption>Star Wars: Episode IV - A New Hope (1977)</figcaption>
+			</a></figure></div>
+	</div></div>
+		<div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">...</div>
+		<div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">...</div>
+	  </div>
+	
 </body>
 
 </html>

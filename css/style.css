@@ -56,17 +56,40 @@ body{
     background-color: #FFFBEB;
 }
 
-#top10 td{
-    padding: 20px 0 20px 0;
-}
 
-#top10 td img{
+/*#####################  IMDB top 10 ######################*/ 
+.img_top10imdb{
     border-radius:12px;
-    box-shadow:  -27px 27px 54px #b8b8b8,
-             27px -27px 54px #fafafa;
+    box-shadow:  19px 19px 60px #7d7b73;
 }
 
-#top10> table>tr>td{
-    width:100%;
+.figtop10imdb figcaption{
     text-align: center;
+    width:130px;
+    margin-top:14px;
+    color:black;
 }
+
+.figtop10imdb{
+    transition: transform 0.5s;
+    width:140px;
+    height:220px;
+    margin:100px;   
+}
+
+.figtop10imdb:hover{
+    transform: scale(1.2);
+    color:black;
+}
+
+.imdbs{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.imdb{
+    height:200px;
+    border-radius: 12px;
+}
+
