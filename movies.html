@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-		<a href="index.html"><img src="assets/img/logo.png" alt="logo" height="140px" style="padding-left:10px"></a>
+		<a href="index.html"><img src="assets/img/logo.png" alt="logo" height="140px" style="padding-left:10px; border: 0px;" ></a>
         <nav class="navigation">
 		    <ul>
 			    <li><a href="movies.html">Movies</a></li>
@@ -20,51 +20,61 @@
 		    </ul>
 	    </nav>
 	</header>
-	<br><br>
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+		<li class="nav-item" role="presentation">
+		  <button class="nav-link active" id="top10-tab" data-bs-toggle="tab" data-bs-target="#top10-tab-pane" type="button" role="tab" aria-controls="top10-tab-pane" aria-selected="true">Top Movie Franchises</button>
+		</li>
+		<li class="nav-item" role="presentation">
+			<button class="nav-link" id="action-tab" data-bs-toggle="tab" data-bs-target="#action-tab-pane" type="button" role="tab" aria-controls="action-tab-pane" aria-selected="false">NETFLIX</button>
+		  </li>
+		  <li class="nav-item" role="presentation">
+			<button class="nav-link" id="animated-tab" data-bs-toggle="tab" data-bs-target="#animated-tab-pane" type="button" role="tab" aria-controls="animated-tab-pane" aria-selected="false">Animated</button>
+		  </li>
+	  </ul>
 	<div class="frachises">
 		<h3><span>Top Movie Frachises</span></h3>
 	</div>
 	<div class="movies">
-        <a href="dcu.htm">
+        <a href="/franchises/dcu.htm">
             <img src="assets/img/DCU/00.jpg" width="200mm" height="230mm">
             <p><b>DC UNIVERSE</b></p>
 		</a>
-        <a href="mcu.htm">
+        <a href="/franchises/mcu.htm">
             <img src="assets/img/MCU/00.jpg" width="200mm" height="230mm">
             <p><b>MARVEL CINEMATIC UNIVERSE</b></p>        
         </a>        
-        <a href="starwars.htm">
+        <a href="/franchises/starwars.htm">
             <img src="assets/img/STAR WARS/00.png" width="200mm" height="230mm">
             <p><b>STAR WARS</b></p>        
         </a>        
-        <a href="x-men.htm">
+        <a href="/franchises/x-men.htm">
               <img src="assets/img/X-MEN/00.jpg" width="200mm" height="230mm">
             <p><b>X-MEN</b></p>        
         </a>        
-        <a href="hpotter.htm">
+        <a href="/franchises/hpotter.htm">
             <img src="assets/img/HPOTTER/00.png" width="200mm" height="230mm">
             <p><b>HARRY POTTER</b></p>        
         </a>        
     </div>
     <br>
     <div class="movies">
-        <a href=tform.htm">                
+        <a href=/franchises/tform.htm">                
             <img src="assets/img/TFORM/00.jpg" width="200mm" height="230mm">
 		    <p><b>TRANSFORMERS</b></p>
         </a>
-        <a href="mi6.htm">                
+        <a href="/franchises/mi6.htm">                
             <img src="assets/img/MI6/00.png" width="200mm" height="230mm">
 		    <p><b>MISSION: IMPOSSIBLE</b></p>
         </a>
-        <a href="potc.htm">                
+        <a href="/franchises/potc.htm">                
             <img src="assets/img/POTC/00.jpg" width="200mm" height="230mm">
 		    <p><b>PIRATES OF THE CARIBBEAN</b></p>
         </a>
-        <a href="f&f.htm">
+        <a href="/franchises/f&f.htm">
 			<img src="assets/img/F&F/00.jpg" width="200mm" height="230mm">
             <p><b>FAST & FURIOUS</b></p>    
         </a>
-        <a href="lotr.htm">    
+        <a href="/franchises/lotr.htm">    
             <img src="assets/img/LOTR/00.png" width="200mm" height="230mm">
             <p><b>LORD OF THE RINGS</b></p>
         </a>
