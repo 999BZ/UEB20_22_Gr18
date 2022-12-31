@@ -112,9 +112,12 @@ img {
 }
 
 .movies {
-    display: inline;
     justify-content: center;
     display: flex;
+    flex: 20%;
+    align-content: center;
+    flex-wrap: wrap;
+    align-content: space-between;
 }
 
 p {
