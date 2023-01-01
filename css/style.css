@@ -147,10 +147,12 @@ table {
 div > h3{
     margin: 30px 0 20px 0;
 }
-
+/*#################### TV SHOWS ####################*/
 .img_tvshows{
     border-radius:12px;
-    /* box-shadow:  19px 19px 60px #7d7b73; */
+    box-shadow:  19px 19px 60px #7d7b73;
+    width:180px;
+    height:300px;
 }
 
 .figtvshows figcaption{
