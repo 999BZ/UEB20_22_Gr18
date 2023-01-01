@@ -71,6 +71,12 @@ body{
     color:black;
     float:right;
 }
+.figtop10imdb>figcaption p {
+    margin-top:40px;
+    margin-left:20px;
+    margin-right:20px;
+    color:#bdc3c7;
+}
 
 .figtop10imdb{
     /* transition: transform 0.5s; */
@@ -80,6 +86,16 @@ body{
     padding-left:5%;
     padding-top:5%;
     /* margin:100px;    */
+}
+
+.figtop10imdb h4 a {
+    color:white;
+    height:200px;
+}
+.figtop10imdb h4 {
+    color:white;
+    height:200px;
+    display:inline;
 }
 
 .figtop10imdb:hover{
@@ -154,6 +170,7 @@ div > h3{
     width:180px;
     height:300px;
 }
+
 
 .figtvshows figcaption{
     text-align: center;
