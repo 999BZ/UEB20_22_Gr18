@@ -167,14 +167,14 @@ div > h3{
 .img_tvshows{
     border-radius:12px;
     box-shadow:  19px 19px 60px #7d7b73;
-    width:180px;
-    height:300px;
+    width:150px;
+    height:250px;
 }
 
 
 .figtvshows figcaption{
     text-align: center;
-    width:130px;
+    width:150px;
     margin-top:14px;
     color:black;
 }
