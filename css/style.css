@@ -60,57 +60,67 @@ body{
 /*#####################  IMDB top 10 ######################*/ 
 .img_top10imdb{
     border-radius:12px;
-    box-shadow:  19px 19px 60px #7d7b73;
+    /* box-shadow:  19px 19px 60px #7d7b73; */
+    float:left;
 }
 
 .figtop10imdb figcaption{
     text-align: center;
-    width:130px;
+    margin-left: 20px;
     margin-top:14px;
     color:black;
+    float:right;
 }
 
 .figtop10imdb{
-    transition: transform 0.5s;
-    width:140px;
-    height:220px;
-    margin:100px;   
+    /* transition: transform 0.5s; */
+    display:flex;
+    /* width:140px; */
+    height:300px;
+    padding-left:5%;
+    padding-top:5%;
+    /* margin:100px;    */
 }
 
 .figtop10imdb:hover{
-    transform: scale(1.2);
+    /* transform: scale(1.2); */
     color:black;
 }
 
 .imdbs{
-    display:grid;
+    /* display:grid;
     grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-    gap:20px;
+    gap:20px; */
 }
 
 .imdb{
-    height:200px;
+    height:300px;
     border-radius: 12px;
+    display:block;
+    margin:0 30%;
+    background-color: #263159;
+    margin-top:5%;
+    margin-bottom: 5%;
 }
-
+/*##############################################################*/
 h1 {
     text-align: center;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-div {
+/* div {
     text-align: center;
-}
+} */
 
-img {
+/* img {
     margin-top: 0px;
     margin-bottom: 0px;
     margin-right: 20px;
     margin-left: 20px;
     border-radius: 10px;
     border: solid 4px black;
-}
+} */
 
 .movies {
     justify-content: center;
@@ -136,4 +146,40 @@ table {
 
 div > h3{
     margin: 30px 0 20px 0;
+}
+
+.img_tvshows{
+    border-radius:12px;
+    /* box-shadow:  19px 19px 60px #7d7b73; */
+}
+
+.figtvshows figcaption{
+    text-align: center;
+    width:130px;
+    margin-top:14px;
+    color:black;
+}
+
+.figtvshows{
+    transition: transform 0.5s;
+    width:140px;
+    height:220px;
+    margin:100px;   
+}
+
+.figtvshows:hover{
+    transform: scale(1.2);
+    color:black;
+}
+
+.tvshows{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.tvshow{
+    height:200px;
+    border-radius: 12px;
+    display:block;
 }
