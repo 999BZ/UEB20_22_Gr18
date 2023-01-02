@@ -29,20 +29,17 @@ p {
     margin-bottom: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
-        
-a {
-    text-decoration: none; 
-    margin-bottom: 15px;
-}
 
-a{
+a {
+    margin-bottom: 15px;
+    text-decoration-color: #251749;
     text-decoration: none;
     color:white;
-    font-family: mainFont;
+    font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 20px;
 }
 
-.navigation > ul > li{
+.navigation > ul > li {
     list-style: none;
     display: inline-block;
     font-size: 25px;
@@ -52,7 +49,7 @@ a{
     margin-right:8px;
 }
 
-.selected{
+.selected {
     color:black;
     width:100%;
     text-decoration: onderline;
@@ -61,7 +58,7 @@ a{
     text-decoration-color: white;
 }
 
-header{
+header {
     height:200px;
     width: max-content;
     display:flex;
@@ -71,10 +68,10 @@ header{
     padding-right:80px;
 }
 
-nav{
+nav {
     justify-content: space-between;
 }
-.navigation > ul> li > a:hover{
+.navigation > ul> li > a:hover {
     /* text-decoration: underline; */
     text-decoration-color: white;
     color:gray;
@@ -82,6 +79,243 @@ nav{
     border-bottom-style: solid;
 }
 
-body{
+body {
     background-color: #FFFBEB;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  overflow-x: hidden;
+  flex-direction: column;
+}
+.home-hero {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+  padding-left: 112px;
+  padding-right: 112px;
+  flex-direction: column;
+  background-size: cover;
+  background-image: url(public/playground_assets/wallpapersden.com_starry-galaxy_5120x2880.jpg);
+  align-content: center;
+}
+.home-menu {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.home-mobile-navigation {
+  top: 0px;
+  flex: 0 0 auto;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  z-index: 150;
+  position: fixed;
+  transform: translateX(100%);
+  transition: transform 0.3s;
+  align-items: flex-start;
+  padding-top: 32px;
+  padding-left: 24px;
+  padding-right: 24px;
+  flex-direction: column;
+}
+.home-logo {
+  width: 64px;
+}
+.home-links {
+  gap: 32px;
+  display: flex;
+  margin-top: 32px;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.home-close-mobile-menu {
+  top: 24px;
+  right: 24px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.home-icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+}
+.home-desktop-navigation {
+  width: 100%;
+  display: flex;
+  margin-top: 24px;
+  align-items: center;
+  flex-direction: column;
+}
+.home-centered {
+  display: flex;
+  max-width: 1200px;
+  align-self: stretch;
+  box-sizing: initial;
+  align-items: center;
+  border-color: #000000;
+  border-width: 0px;
+  padding-left: 24px;
+  border-radius: 50px;
+  padding-right: 24px;
+  margin-bottom: 2px;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #251749;
+}
+.home-image {
+  width: 175px;
+  object-fit: cover;
+}
+.home-left {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 38px;
+  flex-direction: row;
+  padding-bottom: 38px;
+}
+.home-links1 {
+  display: flex;
+  align-items: center;
+  margin-left: 33px;
+  flex-direction: row;
+}
+.home-text03,
+.home-text04,
+.home-text05 {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  padding: 10px 15px;
+  margin: 0 0 0 10px;
+}
+
+.home-text03:hover,
+.home-text04:hover,
+.home-text05:hover {
+  color: #251749;
+  border-radius: 20px;
+  background-color: white;
+}
+.home-right {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+  flex-direction: row;
+  padding-bottom: 24px;
+}
+.home-get-started {
+  cursor: pointer;
+  display: flex;
+  transition: 0.3s;
+  align-items: center;
+  padding-top: 16px;
+  padding-left: 24px;
+  border-radius: 56px;
+  padding-right: 24px;
+  flex-direction: column;
+  padding-bottom: 16px;
+  background-color: #000000;
+}
+.home-get-started:hover {
+  background-color: #5228f5;
+}
+.home-text06 {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 600;
+}
+.home-burger-menu {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.home-mobile-menu-button {
+  width: 40px;
+  height: 40px;
+  display: none;
+}
+.home-header {
+  display: flex;
+  margin-top: 140px;
+  align-items: center;
+  flex-direction: column;
+}
+.home-text07 {
+  color: rgb(255, 255, 255);
+  font-size: 72px;
+  align-self: stretch;
+  font-style: normal;
+  text-align: center;
+  font-weight: 700;
+  line-height: 55px;
+}
+.home-text08 {
+  color: rgb(238, 233, 254);
+  font-size: 20px;
+  max-width: 600px;
+  margin-top: 16px;
+  text-align: center;
+  line-height: 30px;
+}
+.home-container1 {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.home-container2 {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.home-get-started1 {
+  color: white;
+  cursor: pointer;
+  display: flex;
+  margin-top: 40px;
+  transition: 0.3s;
+  align-items: center;
+  padding-top: 16px;
+  padding-left: 32px;
+  border-radius: 56px;
+  padding-right: 32px;
+  flex-direction: column;
+  padding-bottom: 16px;
+  background-color: #251749;
+}
+.home-get-started1:hover {
+  color: black;
+  background-color: #ffffff;
+}
+.home-text09 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+}
+.home-banners {
+  width: 100%;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
