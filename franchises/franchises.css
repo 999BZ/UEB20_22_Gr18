@@ -37,28 +37,25 @@ a {
 
 a{
     text-decoration: none;
-    color:#251749;
+    color:white;
     font-family: mainFont;
     margin-bottom: 20px;
 }
 
-.navigation > ul>li{
+.navigation > ul > li{
     list-style: none;
     display: inline-block;
     font-size: 25px;
     border-radius: 15px;
     padding: 10px;
-    color:#251749;
-    background: linear-gradient(225deg, #fffffb, #e6e2d4);
+    color:white;
     margin-right:8px;
-    /* box-shadow:  -12px 12px 19px #a3a196,
-             12px -12px 19px #ffffff; */
 }
 
 .selected{
     color:black;
     width:100%;
-    /* text-decoration: underline; */
+    text-decoration: onderline;
     border:4px;
     border-bottom-style: solid;
     text-decoration-color: white;
@@ -77,10 +74,10 @@ header{
 nav{
     justify-content: space-between;
 }
-.navigation >ul>li>a:hover{
+.navigation > ul> li > a:hover{
     /* text-decoration: underline; */
     text-decoration-color: white;
-    color:black;
+    color:gray;
     border: 4px;
     border-bottom-style: solid;
 }
