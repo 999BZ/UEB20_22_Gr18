@@ -138,7 +138,7 @@ body {
 .navi123 {
   margin: 0 30%;
 }
-/*##############################################################*/
+
 h1 {
   text-align: center;
   color: white;
@@ -311,11 +311,12 @@ div > h3 {
 }
 .home-image {
   width: 175px;
-  object-fit: cover;
+  vertical-align: middle;
+  align-items: center;
+  flex-direction: row;
 }
 .home-left {
   height: 100%;
-  display: flex;
   align-items: center;
   padding-top: 38px;
   flex-direction: row;
@@ -323,7 +324,6 @@ div > h3 {
 }
 .home-links1 {
   vertical-align: middle;
-  display: flex;
   align-items: center;
   flex-direction: row;
 }
@@ -332,16 +332,18 @@ div > h3 {
 .home-text05 {
   color: rgb(255, 255, 255);
   font-weight: bold;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 12px;
+  margin: 8px;
+  font-weight: 400;
 }
 
 .home-text03:hover,
 .home-text04:hover,
 .home-text05:hover {
   color: #251749;
-  border-radius: 20px;
+  border-radius: 25px;
   background-color: white;
+  font-weight: 600;
 }
 .home-right {
   height: 100%;
@@ -364,12 +366,13 @@ div > h3 {
   background-color: #000000;
 }
 .home-get-started:hover {
-  background-color: #5228f5;
+  background-color: blue;
+  text-color: black;
 }
 .home-text06 {
   color: #ffffff;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
 }
 .home-burger-menu {
   display: flex;

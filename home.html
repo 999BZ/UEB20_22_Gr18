@@ -8,6 +8,7 @@
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <style data-tag="reset-style-sheet">
         html {
             line-height: 1.15;
@@ -91,8 +92,8 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
         data-tag="font" />
-    <!-- <style>
-    body::-webkit-scrollbar {
+    <style>
+    /* body::-webkit-scrollbar {
       width: 0.5em;
       z-index: 100;
       background-color: transparent;
@@ -102,47 +103,51 @@
     body::-webkit-scrollbar-thumb {
       background-color: white;
       box-shadow: 0 -100vh 0 100vh #5128f5; //magic
-    } -->
+    } */
     </style>
     <link rel="stylesheet" href="./style.css" />
 </head>
 
-<body>
+<body background="assets/img/background.jpg" style="background-size: cover; background-repeat: no-repeat;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-muted" style="height: 70px; background-color: rgba(0, 0, 0, 0.6);">
+        <div class="container-fluid justify-content-between" style="height: 25%;">
+            <!-- Left elements -->
+            <div class="d-flex">
+            <!-- Brand -->
+            <a class="navbar-brand me-2 mb-1 d-flex align-items-center" href="#">
+                <img src="assets/img/logo.png" height="40" alt="MDB Logo" loading="lazy" style="margin-top: 2px;" />
+            </a>
+            </div>
+            <!-- Left elements -->
+
+            <!-- Center elements -->
+            <ul class="navbar-nav flex-row d-none d-md-flex">
+                <div class="home-left">
+                    <div class="home-links1">
+                        <a href="tv_shows.html"><span class="home-text03 Link">TV-Shows</span></a>
+                        <a href="movies.html"><span class="home-text04 Link">Movies</span></a>
+                        <a href="imdb.html"><span class="home-text05 Link">IMDB</span></a>
+                    </div>
+                </div>
+            </ul>
+            <!-- Center elements -->
+
+            <!-- Right elements -->
+            <ul>
+                <div class="home-right">
+                    <div class="home-get-started">
+                        <a href="index.html"> <span class="home-text06">Get started</span></a>
+                    </div>
+                </div>
+            </ul>
+            <!-- Right elements -->
+        </div>
+    </nav>
+
     <div>
         <link href="./home.css" rel="stylesheet" />
         <div class="home-container">
             <section class="home-hero">
-                <div class="home-menu">
-                    <div id="mobile-menu" class="home-mobile-navigation">
-                        <img alt="pastedImage" src="https://play.teleporthq.io/static/svg/placeholders/no-image.svg"
-                            class="home-logo" />
-                        <div class="home-links">
-                            <span class="Link">Solutions</span>
-                            <span class="Link">How it works</span>
-                            <span class="Link">Prices</span>
-                        </div>
-                    </div>
-                    <div class="home-desktop-navigation">
-                        <nav class="home-centered">
-                            <a href="index.html"><img alt="image" src="assets/img/logo.png" class="home-image" /></a>
-                            <div class="home-left">
-                                <div class="home-links1">
-                                    <a href="/tv_shows.html"> <span class="home-text03 Link">TV-Shows</span></a>
-                                    <a href="/movies.html"> <span class="home-text04 Link">Movies</span></a>
-                                    <a href="/imdb.html"> <span class="home-text05 Link">IMDB</span></a>
-                                </div>
-                            </div>
-                            <div class="home-right">
-                                <div class="home-get-started">
-                                    <a href="index.html"> <span class="home-text06">Get started</span></a>
-                                </div>
-                            </div>
-                        </nav>
-                    </div>
-                    <div>
-
-                    </div>
-                </div>
                 <header class="home-header" style="background-color:transparent">
                     <h1 class="home-text07">
                         Guide for unlimited movies, TV shows, and more.
@@ -151,7 +156,7 @@
                     <div class="home-container1">
                         <div class="home-container2">
                             <div class="home-get-started1">
-                                <a href="/index.html"><span class="home-text09">Continue as guest -&gt;</span></a>
+                                <a href="index.html"><span class="home-text09">Continue as guest -&gt;</span></a>
                             </div>
                         </div>
                     </div>

@@ -13,22 +13,52 @@
     div{text-align: center;}
     img{margin: 0 20px 0 20px; border-radius: 10px; border: solid black 5px;}
     .movies{display: inline; justify-content: center; display: flex;}
-    p{color: black; text-align: center; margin: 0 0 0 0;
+    p{color: black; text-align: center; margin: 0;
         font-family: Arial, Helvetica, sans-serif;}
     a{text-decoration: none;}
     </style>
 </head>
-<body>
-    <header>
-		<a href="index.html"><img src="assets/img/logo.png" alt="logo" height="140px" style="padding-left:10px; border: 0px;" ></a>
-        <nav class="navigation">
-		    <ul>
-			    <li><a href="movies.html" class="selected">Movies</a></li>
-			    <li><a href="tv_shows.html">TV-Shows</a></li>
-				<li><a href="imdb.html">Top IMDB</a></li>
-		    </ul>
-	    </nav>
-	</header>
+<body style="background-color: lightgray;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-muted" style="height: 70px; background-color: rgb(0, 0, 0, 0.6);">
+        <div class="container-fluid justify-content-between" style="height: 25%;">
+            <!-- Left elements -->
+            <div class="d-flex">
+            <!-- Brand -->
+            <a class="navbar-brand me-2 mb-1 d-flex align-items-center" href="home.html">
+                <img src="assets/img/logo.png" height="40" alt="MDB Logo" loading="lazy" style="margin-top: 2px; border: 0;" />
+            </a>
+            </div>
+            <!-- Left elements -->
+
+            <!-- Center elements -->
+            <ul class="navbar-nav flex-row d-none d-md-flex">
+                <div class="home-left">
+                    <div class="home-links1">
+                        <a href="movies.html"><span class="home-text04 Link">Movies</span></a>
+                        <a href="tv_shows.html"><span class="home-text03 Link">TV-Shows</span></a>
+                        <a href="imdb.html"><span class="home-text05 Link">IMDB</span></a>
+                    </div>
+                </div>
+            </ul>
+            <!-- Center elements -->
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-muted" style="height: 70px; background-color: rgb(0, 0, 0, 0.6);">
+        <div class="container-fluid justify-content-between" style="height: 25%;">
+            <!-- Center elements -->
+            <ul class="navbar-nav flex-row d-none d-md-flex" style="display: block; justify-content: center;">
+                <div class="home-left">
+                    <div class="home-links1">
+                        <a href="movies.html"><span class="home-text04 Link">Movies</span></a>
+                        <a href="tv_shows.html"><span class="home-text03 Link">TV-Shows</span></a>
+                        <a href="imdb.html"><span class="home-text05 Link">IMDB</span></a>
+                    </div>
+                </div>
+            </ul>
+            <!-- Center elements -->
+        </div>
+    </nav>
     <ul class="nav nav-tabs" id="myTab" role="tablist" style="justify-content: center;">
         <li class="nav-item" role="presentation">
 			<button class="nav-link" id="watched-tab" data-bs-toggle="tab" data-bs-target="#watched-tab-pane" 
