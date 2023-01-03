@@ -70,20 +70,11 @@ body {
   color: black;
   float: right;
 }
-.figtop10imdb figcaption li{
-  color: white;
-  margin-left: 1%;
-}
-.imdbdesc{
+.figtop10imdb > figcaption p {
   margin-top: 40px;
   margin-left: 20px;
   margin-right: 20px;
   color: #bdc3c7;
-}
-.imdbgenre{
-  color:#3867d6;
-  margin-top:3%;
-  text-align: center;
 }
 
 .figtop10imdb {
@@ -100,7 +91,6 @@ body {
   color: white;
   height: 200px;
 }
-
 .figtop10imdb h4 {
   color: white;
   height: 200px;
@@ -116,29 +106,21 @@ body {
   /* display:grid;
     grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
     gap:20px; */
-    margin: 0 25%;
-    padding: 5% 0%;
-    background-color:#ffffff;
-}
-
-.orderedImdb li{
-  text-align: center;
 }
 
 .imdb {
   height: 300px;
   border-radius: 12px;
   display: block;
-  margin: 0 5%;
+  margin: 0 30%;
   background-color: #263159;
   margin-top: 5%;
   margin-bottom: 5%;
 }
 
 .navi123 {
-  margin: 0 30%;
 }
-
+/*##############################################################*/
 h1 {
   text-align: center;
   color: white;
@@ -303,7 +285,7 @@ div > h3 {
   border-color: #000000;
   border-width: 0px;
   padding-left: 24px;
-  border-radius: 50px;
+  border-radius: 60px;
   padding-right: 24px;
   flex-direction: row;
   justify-content: space-between;
@@ -311,39 +293,32 @@ div > h3 {
 }
 .home-image {
   width: 175px;
-  vertical-align: middle;
-  align-items: center;
-  flex-direction: row;
+  object-fit: cover;
 }
 .home-left {
   height: 100%;
+  display: flex;
   align-items: center;
   padding-top: 38px;
   flex-direction: row;
   padding-bottom: 38px;
 }
-.home-links1 {
-  vertical-align: middle;
-  align-items: center;
-  flex-direction: row;
-}
+
 .home-text03,
 .home-text04,
 .home-text05 {
   color: rgb(255, 255, 255);
   font-weight: bold;
-  padding: 12px;
-  margin: 8px;
-  font-weight: 400;
+  padding: 10px;
+  margin: 10px;
 }
 
 .home-text03:hover,
 .home-text04:hover,
 .home-text05:hover {
   color: #251749;
-  border-radius: 25px;
+  border-radius: 20px;
   background-color: white;
-  font-weight: 600;
 }
 .home-right {
   height: 100%;
@@ -366,13 +341,12 @@ div > h3 {
   background-color: #000000;
 }
 .home-get-started:hover {
-  background-color: blue;
-  text-color: black;
+  background-color: #5228f5;
 }
 .home-text06 {
   color: #ffffff;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
 }
 .home-burger-menu {
   display: flex;

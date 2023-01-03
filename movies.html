@@ -1,36 +1,60 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movies</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-	<link rel="stylesheet" type= "text/css" href="css/style.css">
-	<script type="text/javascript" src="js/bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/bootstrap.js"></script>
     <link rel="shortcut icon" href="assets/img/logo.png">
     <style>
-    h1{text-align: center; color: black; font-family: Arial, Helvetica, sans-serif;} 
-    div{text-align: center;}
-    img{margin: 0 20px 0 20px; border-radius: 10px; border: solid black 5px;}
-    .movies{display: inline; justify-content: center; display: flex;}
-    p{color: black; text-align: center; margin: 0;
-        font-family: Arial, Helvetica, sans-serif;}
-    a{text-decoration: none;}
+        h1 {
+            text-align: center;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div {
+            text-align: center;
+        }
+
+        img {
+            margin: 0 20px 0 20px;
+            border-radius: 10px;
+            border: solid black 5px;
+        }
+
+        .movies {
+            display: inline;
+            justify-content: center;
+            display: flex;
+        }
+
+        p {
+            color: black;
+            text-align: center;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+        }
     </style>
 </head>
-<body style="background-color: lightgray;">
-    <nav class="navbar navbar-expand-lg navbar-light bg-muted" style="height: 70px; background-color: rgb(0, 0, 0, 0.6);">
-        <div class="container-fluid justify-content-between" style="height: 25%;">
-            <!-- Left elements -->
-            <div class="d-flex">
-            <!-- Brand -->
-            <a class="navbar-brand me-2 mb-1 d-flex align-items-center" href="home.html">
-                <img src="assets/img/logo.png" height="40" alt="MDB Logo" loading="lazy" style="margin-top: 2px; border: 0;" />
-            </a>
-            </div>
-            <!-- Left elements -->
 
-            <!-- Center elements -->
+<body style="background-color: lightgray;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-muted"
+        style="height: 70px; background-color: rgb(0, 0, 0, 0.6);">
+        <div class="container-fluid justify-content-between" style="height: 25%;">
+            <div class="d-flex">
+                <a class="navbar-brand me-2 mb-1 d-flex align-items-center" href="home.html">
+                    <img src="assets/img/logo.png" height="40" alt="MDB Logo" loading="lazy"
+                        style="margin-top: 2px; border: 0;" />
+                </a>
+            </div>
             <ul class="navbar-nav flex-row d-none d-md-flex">
                 <div class="home-left">
                     <div class="home-links1">
@@ -40,50 +64,34 @@
                     </div>
                 </div>
             </ul>
-            <!-- Center elements -->
         </div>
     </nav>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-muted" style="height: 70px; background-color: rgb(0, 0, 0, 0.0);">
-        <div class="container-fluid justify-content-between" style="height: 25%;">
-            <!-- Center elements -->
-            <ul class="navbar-nav flex-row d-none d-md-flex" style="display: block; justify-content: center;">
-                <div class="home-left">
-                    <div class="home-links1">
-                        <a href="movies.html"><span class="home-text04 Link">Most Watched</span></a>
-                        <a href="movies.html"><span class="home-text04 Link">Top Franchises</span></a>
-                        <a href="tv_shows.html"><span class="home-text03 Link">Netflix</span></a>
-                        <a href="imdb.html"><span class="home-text05 Link">Animated</span></a>
-                    </div>
-                </div>
-            </ul>
-            <!-- Center elements -->
-        </div>
-    </nav>
     <ul class="nav nav-tabs" id="myTab" role="tablist" style="justify-content: center;">
         <li class="nav-item" role="presentation">
-			<button class="nav-link" id="watched-tab" data-bs-toggle="tab" data-bs-target="#watched-tab-pane" 
-            type="button" role="tab" aria-controls="watched-tab-pane" aria-selected="false">Most Watched</button>
-		</li>
-		<li class="nav-item" role="presentation">
-		    <button class="nav-link active" id="franchises" data-bs-toggle="tab" data-bs-target="#franchises-pane" 
-            type="button" role="tab" aria-controls="franchises-pane" aria-selected="true">Top Movie Franchises</button>
-		</li>
-		<li class="nav-item" role="presentation">
-			<button class="nav-link" id="netflix-tab" data-bs-toggle="tab" data-bs-target="#netflix-tab-pane" 
-            type="button" role="tab" aria-controls="netflix-tab-pane" aria-selected="false">NETFLIX</button>
-		</li>
-		<li class="nav-item" role="presentation">
-			<button class="nav-link" id="animated-tab" data-bs-toggle="tab" data-bs-target="#animated-tab-pane" 
-            type="button" role="tab" aria-controls="animated-tab-pane" aria-selected="false">Animated</button>
-		</li>
-	</ul>
-    
-    <div class="tab-pane fade show active" id="watched-pane" role="tabpanel" aria-labelledby="watched" tabindex="0">
+            <button class="nav-link active" id="watched-tab" data-bs-toggle="tab" data-bs-target="#watched-tab-pane"
+                type="button" role="tab" aria-controls="watched-tab-pane" aria-selected="true"
+                style="color: black; border-radius: 15px; margin: 8px;">Most Watched</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="franchises" data-bs-toggle="tab" data-bs-target="#franchises-pane"
+                type="button" role="tab" aria-controls="franchises-pane" aria-selected="false"
+                style="color: black; border-radius: 15px; margin: 8px;">Top Movie Franchises</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="netflix-tab" data-bs-toggle="tab" data-bs-target="#netflix-tab-pane"
+                type="button" role="tab" aria-controls="netflix-tab-pane" aria-selected="false"
+                style="color: black; border-radius: 15px; margin: 8px;">NETFLIX</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="animated-tab" data-bs-toggle="tab" data-bs-target="#animated-tab-pane"
+                type="button" role="tab" aria-controls="animated-tab-pane" aria-selected="false"
+                style="color: black; border-radius: 15px; margin: 8px;">Animated</button>
+        </li>
+    </ul>
 
-    </div>
-
-    <div class="tab-pane fade show active" id="franchises-pane" role="tabpanel" aria-labelledby="franchises" tabindex="0">
+    <div class="tab-pane fade show active" id="franchises-pane" role="tabpanel" aria-labelledby="franchises"
+        tabindex="0">
         <div class="franchises">
             <h3><span>Top Movie Franchises</span></h3>
         </div>
@@ -94,37 +102,37 @@
             </a>
             <a href="franchises/mcu.htm">
                 <img src="franchises/MCU/00.jpg" width="200mm" height="230mm">
-                <p><b>MARVEL CINEMATIC UNIVERSE</b></p>        
-            </a>        
+                <p><b>MARVEL CINEMATIC UNIVERSE</b></p>
+            </a>
             <a href="franchises/starwars.htm">
                 <img src="franchises/STAR WARS/00.png" width="200mm" height="230mm">
-                <p><b>STAR WARS</b></p>        
-            </a>        
+                <p><b>STAR WARS</b></p>
+            </a>
             <a href="franchises/x-men.htm">
                 <img src="franchises/X-MEN/00.jpg" width="200mm" height="230mm">
-                <p><b>X-MEN</b></p>        
-            </a>        
+                <p><b>X-MEN</b></p>
+            </a>
             <a href="franchises/wizards.htm">
                 <img src="franchises/WIZARDS/00.jpg" width="200mm" height="230mm">
-                <p><b>THE WIZARDING WORLD</b></p>        
+                <p><b>THE WIZARDING WORLD</b></p>
             </a>
-            <a href="franchises/tform.htm">                
+            <a href="franchises/tform.htm">
                 <img src="franchises/TFORM/00.jpg" width="200mm" height="230mm">
                 <p><b>TRANSFORMERS</b></p>
             </a>
-            <a href="franchises/mi6.htm">                
+            <a href="franchises/mi6.htm">
                 <img src="franchises/MI6/00.png" width="200mm" height="230mm">
                 <p><b>MISSION: IMPOSSIBLE</b></p>
             </a>
-            <a href="franchises/potc.htm">                
+            <a href="franchises/potc.htm">
                 <img src="franchises/POTC/00.jpg" width="200mm" height="230mm">
                 <p><b>PIRATES OF THE CARIBBEAN</b></p>
             </a>
             <a href="franchises/f&f.htm">
                 <img src="franchises/F&F/00.jpg" width="200mm" height="230mm">
-                <p><b>FAST & FURIOUS</b></p>    
+                <p><b>FAST & FURIOUS</b></p>
             </a>
-            <a href="franchises/lotr.htm">    
+            <a href="franchises/lotr.htm">
                 <img src="franchises/LOTR/00.png" width="200mm" height="230mm">
                 <p><b>LORD OF THE RINGS</b></p>
             </a>
@@ -193,9 +201,10 @@
     <div class="tab-pane fade show active" id="netflix-pane" role="tabpanel" aria-labelledby="netflix" tabindex="0">
 
     </div>
-    
+
     <div class="tab-pane fade show active" id="animated-pane" role="tabpanel" aria-labelledby="animated" tabindex="0">
 
     </div>
 </body>
+
 </html>
