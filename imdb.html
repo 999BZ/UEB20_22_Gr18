@@ -9,6 +9,12 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script type="text/javascript" src="js/bootstrap.js"></script>
 	<link rel="shortcut icon" href="assets/img/logotab.png">
+	<style>
+		.nav-link.active {
+  background-color: #333;
+  color: #fff;
+}
+	</style>
 </head>
 
 <body style="background-color: lightblue;">
@@ -37,7 +43,7 @@
 		<li class="nav-item" role="presentation">
 			<button class="nav-link active" id="top10-tab" data-bs-toggle="tab" data-bs-target="#top10-tab-pane"
 				type="button" role="tab" aria-controls="top10-tab-pane" aria-selected="true"
-				style="color: black; border-radius: 15px; margin: 8px;">Top 10</button>
+				style="color: black; border-radius: 15px; margin: 8px;">Movies</button>
 		</li>
 		<li class="nav-item" role="presentation">
 			<button class="nav-link" id="action-tab" data-bs-toggle="tab" data-bs-target="#action-tab-pane"
@@ -54,9 +60,20 @@
 				type="button" role="tab" aria-controls="showimdb-tab-pane" aria-selected="false"
 				style="color: black; border-radius: 15px; margin: 8px;">TV-Shows</button>
 		</li>
+		<li class="nav-item" role="presentation">
+			<button class="nav-link" id="crime-tab" data-bs-toggle="tab" data-bs-target="#crime-tab-pane"
+				type="button" role="tab" aria-controls="crime-tab-pane" aria-selected="false"
+				style="color: black; border-radius: 15px; margin: 8px;">Crime</button>
+		</li>
+		<li class="nav-item" role="presentation">
+			<button class="nav-link" id="drama-tab" data-bs-toggle="tab" data-bs-target="#drama-tab-pane"
+				type="button" role="tab" aria-controls="drama-tab-pane" aria-selected="false"
+				style="color: black; border-radius: 15px; margin: 8px;">Drama</button>
+		</li>
 	</ul>
 	<ol class="orderedImdb">
 		<div class="tab-content" id="myTabContent">
+			<!-- TOP 10 -->
 			<div class="tab-pane fade show active" id="top10-tab-pane" role="tabpanel" aria-labelledby="top10-tab"
 				tabindex="0">
 				<div class="imdbs">
@@ -224,7 +241,8 @@
 					</div>
 				</div>
 			</div>
-			<div class="tab-pane fade" id="action-tab-pane" role="tabpanel" aria-labelledby="action-tab" tabindex="0">
+			<!-- ACTION TAB -->
+			<div class="tab-pane fade" id="action-tab-pane" role="tabpanel" aria-labelledby="action-tab" tabindex="1">
 				<div class="imdbs">
 					<div class="imdb">
 						<figure class="figtop10imdb"><a href="selected.html"><img class="img_top10imdb"
@@ -393,8 +411,9 @@
 					</div>
 				</div>
 			</div>
+			<!-- Animated TAB -->
 			<div class="tab-pane fade" id="animated-tab-pane" role="tabpanel" aria-labelledby="animated-tab"
-				tabindex="0">
+				tabindex="2">
 				<div class="imdbs">
 					<div class="imdb">
 						<figure class="figtop10imdb"><a href="selected.html"><img class="img_top10imdb"
@@ -551,8 +570,314 @@
 					</div>
 				</div>
 			</div>
-			<div class="tab-pane fade show active" id="showimdb-tab-pane" role="tabpanel" aria-labelledby="showimdb-tab"
-				tabindex="0">
+			<!-- TV SHOWS -->
+			<div class="tab-pane fade" id="showimdb-tab-pane" role="tabpanel" aria-labelledby="showimdb-tab"
+				tabindex="3">
+				<div class="imdbs">
+					<div class="imdb">
+						<figure class="figtop10imdb"><a href="selected.html"><img class="img_top10imdb"
+									src="assets/img/IMDB/planetEarth2.jpg" alt="Planet Earth II (2016)"
+									height="200px" width="130px"></a>
+							<figcaption><a href="selected.html">
+									<li>
+										<h4>Planet Earth II (2016)</h4>
+									</li>
+								</a>
+								<p class="imdbgenre">Genre: <u>Documentary</u></p>
+								<p class="imdbdesc">David Attenborough returns with a new wildlife documentary that shows life in a variety of habitats.</p>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="imdb">
+						<figure class="figtop10imdb"><a href="selected.html"><img class="img_top10imdb"
+									src="assets/img/IMDB/breakingBad.jpg" alt="Breaking Bad (2008)" height="200px"
+									width="130px"></a>
+							<figcaption><a href="selected.html">
+									<li>
+										<h4>Breaking Bad (2008)</h4>
+									</li>
+								</a></a>
+								<p class="imdbgenre">Genre: <u>Crime, Drama, Thriller</u></p>
+								<p class="imdbdesc">A chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine with a former student in order to secure his family's future.
+								</p>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="imdb">
+						<figure class="figtop10imdb"><a href="selected.html"><img class="img_top10imdb"
+									src="assets/img/IMDB/planetEarth.jpg" alt="Planet Earth (2006)" height="200px"
+									width="130px"></a>
+							<figcaption><a href="selected.html">
+									<li>
+										<h4>Planet Earth (2006)</h4>
+									</li>
+								</a></a>
+								<p class="imdbgenre">Genre: <u>Documentary</u></p>
+								<p class="imdbdesc">Each 50 minute episode features a global overview of a different biome or habitat on Earth (Polar, Mountain, Cave, Desert, Plains, Fresh Water, Seas, Ocean, Forest), followed by a ten-minute featurette which takes a behind-the-scenes look at the challenges of filming the episode.</p>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="imdb">
+						<figure class="figtop10imdb"><a href="selected.html"><img class="img_top10imdb"
+									src="assets/img/IMDB/bandofBrothers.jpg" alt="Band of Brothers (2001)"
+									height="200px" width="130px"></a>
+							<figcaption><a href="selected.html">
+									<li>
+										<h4>Band of Brothers (2001)</h4>
+									</li>
+								</a></a>
+								<p class="imdbgenre">Genre: <u>Drama, History, War</u></p>
+								<p class="imdbdesc">The story of Easy Company of the U.S. Army 101st Airborne Division and their mission in World War II Europe, from Operation Overlord to V-J Day.</p>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="imdb">
+						<figure class="figtop10imdb"><a href="selected.html"><img class="img_top10imdb"
+									src="assets/img/IMDB/chernobyl.jpg" alt="Chernobyl (2019)" height="200px"
+									width="130px"></a>
+							<figcaption><a href="selected.html">
+									<li>
+										<h4>Chernobyl (2019)</h4>
+									</li>
+								</a></a>
+								<p class="imdbgenre">Genre: <u>Drama, History, Thriller</u></p>
+								<p class="imdbdesc">In April 1986, an explosion at the Chernobyl nuclear power plant in the Union of Soviet Socialist Republics becomes one of the world's worst man-made catastrophes.</p>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="imdb">
+						<figure class="figtop10imdb"><a href="selected.html"><img class="img_top10imdb"
+									src="assets/img/IMDB/theWire.jpg" alt="The Wire (2002)"
+									height="200px" width="130px"></a>
+							<figcaption><a href="selected.html">
+									<li>
+										<h4>The Wire (2002)</h4>
+									</li>
+								</a></a>
+								<p class="imdbgenre">Genre: <u>Crime, Drama, Thriller</u></p>
+								<p class="imdbdesc">The Baltimore drug scene, as seen through the eyes of drug dealers and law enforcement.</p>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="imdb">
+						<figure class="figtop10imdb"><a href="selected.html"><img class="img_top10imdb"
+									src="assets/img/IMDB/bluePlanet2.jpg"
+									alt="Blue Planet II (2017)" height="200px"
+									width="130px"></a>
+							<figcaption><a href="selected.html">
+									<li>
+										<h4>Blue Planet II (2017)</h4>
+									</li>
+								</a></a>
+								<p class="imdbgenre">Genre: <u>Documentary</u></p>
+								<p class="imdbdesc">David Attenborough returns to the world's oceans in this sequel to the acclaimed documentary filming rare and unusual creatures of the deep, as well as documenting the problems our oceans face.</p>
+							</figcaption>
+							</a>
+						</figure>
+					</div>
+					<div class="imdb">
+						<figure class="figtop10imdb"><a href="selected.html"><img class="img_top10imdb"
+									src="assets/img/IMDB/avatarAirbender.jpg" alt="Avatar: The Last Airbender (2005)" height="200px"
+									width="130px"></a>
+							<figcaption><a href="selected.html">
+									<li>
+										<h4>Avatar: The Last Airbender (2005)</h4>
+									</li>
+								</a></a>
+								<p class="imdbgenre">Genre: <u>Animation, Action, Adventure</u></p>
+								<p class="imdbdesc">In a war-torn world of elemental magic, a young boy reawakens to undertake a dangerous mystic quest to fulfill his destiny as the Avatar, and bring peace to the world.</p>
+							</figcaption>
+							</a>
+						</figure>
+					</div>
+					<div class="imdb">
+						<figure class="figtop10imdb"><a href="selected.html"><img class="img_top10imdb"
+									src="assets/img/IMDB/cosmosSpacetimeOdyssey.jpg"
+									alt="Cosmos: A Spacetime Odyssey (2014)" height="200px"
+									width="130px"></a>
+							<figcaption><a href="selected.html">
+									<li>
+										<h4>Cosmos: A Spacetime Odyssey (2014)</h4>
+									</li>
+								</a></a>
+								<p class="imdbgenre">Genre: <u>Documentary</u></p>
+								<p class="imdbdesc">An exploration of our discovery of the laws of nature and coordinates in space and time.</p>
+							</figcaption>
+							</a>
+						</figure>
+					</div>
+					<div class="imdb">
+						<figure class="figtop10imdb"><a href="selected.html"><img class="img_top10imdb"
+									src="assets/img/IMDB/theSopranos.jpg" alt="The Sopranos (1999)"
+									height="200px" width="130px"></a>
+							<figcaption><a href="selected.html">
+									<li>
+										<h4>The Sopranos (1999)</h4>
+									</li>
+								</a></a>
+								<p class="imdbgenre">Genre: <u>Crime, Drama</u></p>
+								<p class="imdbdesc">New Jersey mob boss Tony Soprano deals with personal and professional issues in his home and business life that affect his mental state, leading him to seek professional psychiatric counseling.</p>
+							</figcaption>
+							</a>
+						</figure>
+					</div>
+				</div>
+			</div>
+			<!-- TV SHOWS- CRIME -->
+			<div class="tab-pane fade" id="crime-tab-pane" role="tabpanel" aria-labelledby="crime-tab"
+				tabindex="3">
+				<div class="imdbs">
+					<div class="imdb">
+						<figure class="figtop10imdb"><a href="selected.html"><img class="img_top10imdb"
+									src="assets/img/IMDB/breakingBad.jpg" alt="Breaking Bad (2008–2013)"
+									height="200px" width="130px"></a>
+							<figcaption><a href="selected.html">
+									<li>
+										<h4>Breaking Bad (2008–2013)</h4>
+									</li>
+								</a>
+								<p class="imdbgenre">Genre: <u>Crime, Drama, Thriller</u></p>
+								<p class="imdbdesc">A chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine with a former student in order to secure his family's future.</p>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="imdb">
+						<figure class="figtop10imdb"><a href="selected.html"><img class="img_top10imdb"
+									src="assets/img/IMDB/theWire.jpg" alt="The Wire (2002–2008)" height="200px"
+									width="130px"></a>
+							<figcaption><a href="selected.html">
+									<li>
+										<h4>The Wire (2002–2008)</h4>
+									</li>
+								</a></a>
+								<p class="imdbgenre">Genre: <u>Crime, Drama, Thriller</u></p>
+								<p class="imdbdesc">The Baltimore drug scene, as seen through the eyes of drug dealers and law enforcement.</p>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="imdb">
+						<figure class="figtop10imdb"><a href="selected.html"><img class="img_top10imdb"
+									src="assets/img/IMDB/theSopranos.jpg" alt="The Sopranos (1999–2007)" height="200px"
+									width="130px"></a>
+							<figcaption><a href="selected.html">
+									<li>
+										<h4>The Sopranos (1999–2007)</h4>
+									</li>
+								</a></a>
+								<p class="imdbgenre">Genre: <u>Crime, Drama</u></p>
+								<p class="imdbdesc">New Jersey mob boss Tony Soprano deals with personal and professional issues in his home and business life that affect his mental state, leading him to seek professional psychiatric counseling.</p>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="imdb">
+						<figure class="figtop10imdb"><a href="selected.html"><img class="img_top10imdb"
+									src="assets/img/IMDB/sherlock.jpg" alt="Sherlock (2010–2017)"
+									height="200px" width="130px"></a>
+							<figcaption><a href="selected.html">
+									<li>
+										<h4>Sherlock (2010–2017)</h4>
+									</li>
+								</a></a>
+								<p class="imdbgenre">Genre: <u>Crime, Drama, Mystery</u></p>
+								<p class="imdbdesc">A modern update finds the famous sleuth and his doctor partner solving crime in 21st-century London.</p>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="imdb">
+						<figure class="figtop10imdb"><a href="selected.html"><img class="img_top10imdb"
+									src="assets/img/IMDB/deathnote.jpg" alt="Death Note (2006–2007)" height="200px"
+									width="130px"></a>
+							<figcaption><a href="selected.html">
+									<li>
+										<h4>Death Note (2006–2007)</h4>
+									</li>
+								</a></a>
+								<p class="imdbgenre">Genre: <u>Animation, Crime, Drama</u></p>
+								<p class="imdbdesc">An intelligent high school student goes on a secret crusade to eliminate criminals from the world after discovering a notebook capable of killing anyone whose name is written into it.</p>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="imdb">
+						<figure class="figtop10imdb"><a href="selected.html"><img class="img_top10imdb"
+									src="assets/img/IMDB/persona.jpg" alt="Persona (2018)"
+									height="200px" width="130px"></a>
+							<figcaption><a href="selected.html">
+									<li>
+										<h4>Persona (2018)</h4>
+									</li>
+								</a></a>
+								<p class="imdbgenre">Genre: <u>Crime, Drama, Mystery</u></p>
+								<p class="imdbdesc">A man diagnosed with Alzheimer's decides to punish criminals.</p>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="imdb">
+						<figure class="figtop10imdb"><a href="selected.html"><img class="img_top10imdb"
+									src="assets/img/IMDB/theOtherMe.jpg"
+									alt="The Other Me (2019– )" height="200px"
+									width="130px"></a>
+							<figcaption><a href="selected.html">
+									<li>
+										<h4>The Other Me (2019– )</h4>
+									</li>
+								</a></a>
+								<p class="imdbgenre">Genre: <u>Crime, Drama, Mystery</u></p>
+								<p class="imdbdesc">A series of murders alarm the police authorities, as strange symbolisms are traced to every crime scene. The eccentric professor of criminology Dimitris Lainis is asked to shed some light on the mystery.</p>
+							</figcaption>
+							</a>
+						</figure>
+					</div>
+					<div class="imdb">
+						<figure class="figtop10imdb"><a href="selected.html"><img class="img_top10imdb"
+									src="assets/img/IMDB/avatarAirbender.jpg" alt="Avatar: The Last Airbender (2005)" height="200px"
+									width="130px"></a>
+							<figcaption><a href="selected.html">
+									<li>
+										<h4>Avatar: The Last Airbender (2005)</h4>
+									</li>
+								</a></a>
+								<p class="imdbgenre">Genre: <u>Animation, Action, Adventure</u></p>
+								<p class="imdbdesc">In a war-torn world of elemental magic, a young boy reawakens to undertake a dangerous mystic quest to fulfill his destiny as the Avatar, and bring peace to the world.</p>
+							</figcaption>
+							</a>
+						</figure>
+					</div>
+					<div class="imdb">
+						<figure class="figtop10imdb"><a href="selected.html"><img class="img_top10imdb"
+									src="assets/img/IMDB/cosmosSpacetimeOdyssey.jpg"
+									alt="Cosmos: A Spacetime Odyssey (2014)" height="200px"
+									width="130px"></a>
+							<figcaption><a href="selected.html">
+									<li>
+										<h4>Cosmos: A Spacetime Odyssey (2014)</h4>
+									</li>
+								</a></a>
+								<p class="imdbgenre">Genre: <u>Documentary</u></p>
+								<p class="imdbdesc">An exploration of our discovery of the laws of nature and coordinates in space and time.</p>
+							</figcaption>
+							</a>
+						</figure>
+					</div>
+					<div class="imdb">
+						<figure class="figtop10imdb"><a href="selected.html"><img class="img_top10imdb"
+									src="assets/img/IMDB/theSopranos.jpg" alt="The Sopranos (1999)"
+									height="200px" width="130px"></a>
+							<figcaption><a href="selected.html">
+									<li>
+										<h4>The Sopranos (1999)</h4>
+									</li>
+								</a></a>
+								<p class="imdbgenre">Genre: <u>Crime, Drama</u></p>
+								<p class="imdbdesc">New Jersey mob boss Tony Soprano deals with personal and professional issues in his home and business life that affect his mental state, leading him to seek professional psychiatric counseling.</p>
+							</figcaption>
+							</a>
+						</figure>
+					</div>
+				</div>
+			</div>
+			<!-- TV SHOWS DRAMA -->
+			<div class="tab-pane fade" id="drama-tab-pane" role="tabpanel" aria-labelledby="drama-tab"
+				tabindex="3">
 				<div class="imdbs">
 					<div class="imdb">
 						<figure class="figtop10imdb"><a href="selected.html"><img class="img_top10imdb"
