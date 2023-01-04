@@ -18,7 +18,7 @@ body::-webkit-scrollbar {
 ::-webkit-scrollbar-track {
   background: #60a3bc;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: rgb(0, 0, 0, 0.6);
@@ -131,9 +131,9 @@ body {
     grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
     gap:20px; */
 }
-.figtop10imdb li{
-  color:white;
-  margin-left:1%;
+.figtop10imdb li {
+  color: white;
+  margin-left: 1%;
 }
 .imdb {
   height: 300px;
@@ -447,6 +447,7 @@ div > h3 {
   align-items: center;
   flex-direction: column;
 }
+<<<<<<< Updated upstream
 
 h1 {
   text-align: center;
@@ -513,3 +514,22 @@ a > p {
   margin-top: 0;
   font-family: mainFont;
 }
+=======
+.sm-logo {
+  margin: 0 30px;
+  width: 35px;
+}
+.home-footer {
+  opacity: 0.6;
+}
+.sm-logos {
+  display: flex;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+.explore-cards {
+  display: flex;
+  justify-content: space-between;
+}
+>>>>>>> Stashed changes
