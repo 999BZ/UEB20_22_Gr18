@@ -3,7 +3,7 @@
   src: url("../assets/fonts/Oswald-VariableFont_wght.ttf");
 }
 
-h1 {
+h1, h3 {
   text-align: center;
   color: white;
   font-family: mainFont;
