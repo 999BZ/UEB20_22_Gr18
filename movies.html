@@ -22,7 +22,6 @@
         img {
             margin: 0 20px 0 20px;
             border-radius: 10px;
-            border: solid black 5px;
         }
 
         .movies {
@@ -44,8 +43,6 @@
         figcaption{
             color: black;
             text-align: center;
-            margin-top: 0px;
-            margin-bottom: 0px;
             font-family: mainFont;
         }
         
@@ -57,26 +54,26 @@
         }
 
         .film {
-            height: 200px;
-            border-radius: 12px;
-            display: flex;
+            display: inline-flex;
             justify-content: center;
-            align-content: center;
-            margin: 10px;
+            width: 900px;
+            margin: 0 5px 20px 5px;
         }
 
-        .images {
-            border: solid 0;
-            width: 180px;
-            height: 250px;
+        #images {
             margin: 0 30px 20px 30px;
+            width: 200mm;
+            height: 270mm; 
         }
 
         div > a #hovertext {
             text-decoration: none;
             color: black;
-            font-family: mainFont;
             margin: 0 20px 20px 20px;
+        }
+
+        a.hovertext:hover {
+            transform: scale(1.1);
         }
 
         a > p {
@@ -136,108 +133,140 @@
 
     <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="watched-tab-pane" role="tabpanel" aria-labelledby="watched-tab" tabindex="0">
-            <div class="franchises">
-                <h3><span>Most Watched movies of all time</span></h3>
-            </div>
+            <h3><span>Most Watched movies of all time</span></h3>
+            <br>
             <div class="films">
-                <div class="films">
+                <div class="film">
                     <a class="hovertext">
                         <img src="assets/img/Movies/avatar.jpg" width="200mm" height="270mm" class="images">
                         <p><b>Avatar (2009)</b></p>
                     </a>
                 </div>
-                <div class="films">
+                <div class="film">
                     <a class="hovertext">
                         <img src="franchises/MCU/22.jpg" width="200mm" height="270mm" class="images">
                         <p><b>Avengers: Endgame (2019)</b></p>
                     </a>
                 </div>
-                <div class="films">
+                <div class="film">
                     <a class="hovertext">
                         <img src="assets/img/Movies/titanic.jpg" width="200mm" height="270mm" class="images">
                         <p><b>Titanic (1995)</b></p>
                     </a>
                 </div>
-                <div class="films">
+                <div class="film">
                     <a class="hovertext">
                         <img src="franchises/STAR WARS/7.jpg" width="200mm" height="270mm" class="images">
                         <p><b>Star Wars: The Force Awakens (2013)</b></p>
                     </a>
                 </div>
-            </div>
-            <div class="films">
-                <div class="films">
+                <div class="film">
                     <a class="hovertext">
                         <img src="franchises/MCU/19.jpg" width="200mm" height="270mm" class="images">
                         <p><b>Avengers: Infinity War (2018)</b></p>
                     </a>
                 </div>
-                <div class="films">
-                    <a>
+            </div>
+            <div class="films">
+                <div class="film">
+                    <a class="hovertext">
                         <img src="franchises/MCU/32.jpg" width="200mm" height="270mm" class="images">
                         <p><b>Spider-Man: No Way Home (2021)</b></p>
                     </a>
                 </div>
-                <div class="films">
-                    <a>
+                <div class="film">
+                    <a class="hovertext">
                         <img src="assets/img/Movies/jurassic world.jpg" width="200mm" height="270mm" class="images">
                         <p><b>Jurassic World (2015)</b></p>
                     </a>
                 </div>
-                <div class="films">
-                    <a>
+                <div class="film">
+                    <a class="hovertext">
                         <img src="assets/img/Movies/lion king.jpg" width="200mm" height="270mm" class="images">
                         <p><b>The Lion King (2019)</b></p>
+                    </a>
+                </div>
+                <div class="film">
+                    <a class="hovertext">
+                        <img src="franchises/MCU/6.jpg" width="200mm" height="270mm" class="images">
+                        <p><b>The Avengers (2012)</b></p>
+                    </a>
+                </div>
+                <div class="film">
+                    <a class="hovertext">
+                        <img src="franchises/F&F/7.jpg" width="200mm" height="270mm" class="images">
+                        <p><b>Furious 7 (2015)</b></p>
                     </a>
                 </div>
             </div>
         </div>
 
         <div class="tab-pane fade show" id="franchises-pane" role="tabpanel" aria-labelledby="franchises" tabindex="1">
-            <div class="franchises">
-                <h3><span>Top Movie Franchises</span></h3>
+            <h3><span>Top Movie Franchises</span></h3>
+            <br>
+            <div class="films">
+                <div class="film">
+                    <a href="franchises/dcu.htm" class="hovertext">
+                        <img src="franchises/DCU/00.jpg" width="200mm" height="230mm">
+                        <p><b>DC UNIVERSE</b></p>
+                    </a>
+                </div>
+                <div class="film">
+                    <a href="franchises/mcu.htm" class="hovertext">
+                        <img src="franchises/MCU/00.jpg" width="200mm" height="230mm">
+                        <p><b>MARVEL CINEMATIC UNIVERSE</b></p>
+                    </a>
+                </div>
+                <div class="film">
+                    <a href="franchises/starwars.htm" class="hovertext">
+                        <img src="franchises/STAR WARS/00.png" width="200mm" height="230mm">
+                        <p><b>STAR WARS</b></p>
+                    </a>
+                </div>
+                <div class="film">
+                    <a href="franchises/x-men.htm" class="hovertext">
+                        <img src="franchises/X-MEN/00.jpg" width="200mm" height="230mm">
+                        <p><b>X-MEN</b></p>
+                    </a>
+                </div>
+                <div class="film">
+                    <a href="franchises/wizards.htm" class="hovertext">
+                        <img src="franchises/WIZARDS/00.jpg" width="200mm" height="230mm">
+                        <p><b>THE WIZARDING WORLD</b></p>
+                    </a>
+                </div>
             </div>
-            <div class="movies">
-                <a href="franchises/dcu.htm" title="DCU">
-                    <img src="franchises/DCU/00.jpg" width="200mm" height="230mm">
-                    <p><b>DC UNIVERSE</b></p>
-                </a>
-                <a href="franchises/mcu.htm">
-                    <img src="franchises/MCU/00.jpg" width="200mm" height="230mm">
-                    <p><b>MARVEL CINEMATIC UNIVERSE</b></p>
-                </a>
-                <a href="franchises/starwars.htm">
-                    <img src="franchises/STAR WARS/00.png" width="200mm" height="230mm">
-                    <p><b>STAR WARS</b></p>
-                </a>
-                <a href="franchises/x-men.htm">
-                    <img src="franchises/X-MEN/00.jpg" width="200mm" height="230mm">
-                    <p><b>X-MEN</b></p>
-                </a>
-                <a href="franchises/wizards.htm">
-                    <img src="franchises/WIZARDS/00.jpg" width="200mm" height="230mm">
-                    <p><b>THE WIZARDING WORLD</b></p>
-                </a>
-                <a href="franchises/tform.htm">
-                    <img src="franchises/TFORM/00.jpg" width="200mm" height="230mm">
-                    <p><b>TRANSFORMERS</b></p>
-                </a>
-                <a href="franchises/mi6.htm">
-                    <img src="franchises/MI6/00.png" width="200mm" height="230mm">
-                    <p><b>MISSION: IMPOSSIBLE</b></p>
-                </a>
-                <a href="franchises/potc.htm">
-                    <img src="franchises/POTC/00.jpg" width="200mm" height="230mm">
-                    <p><b>PIRATES OF THE CARIBBEAN</b></p>
-                </a>
-                <a href="franchises/f&f.htm">
-                    <img src="franchises/F&F/00.jpg" width="200mm" height="230mm">
-                    <p><b>FAST & FURIOUS</b></p>
-                </a>
-                <a href="franchises/lotr.htm">
-                    <img src="franchises/LOTR/00.png" width="200mm" height="230mm">
-                    <p><b>LORD OF THE RINGS</b></p>
-                </a>
+            <div class="films">
+                <div class="film">
+                    <a href="franchises/tform.htm" class="hovertext">
+                        <img src="franchises/TFORM/00.jpg" width="200mm" height="230mm">
+                        <p><b>TRANSFORMERS</b></p>
+                    </a>
+                </div>
+                <div class="film">
+                    <a href="franchises/mi6.htm" class="hovertext">
+                        <img src="franchises/MI6/00.png" width="200mm" height="230mm">
+                        <p><b>MISSION: IMPOSSIBLE</b></p>
+                    </a>
+                </div>
+                <div class="film">
+                    <a href="franchises/potc.htm" class="hovertext">
+                        <img src="franchises/POTC/00.jpg" width="200mm" height="230mm">
+                        <p><b>PIRATES OF THE CARIBBEAN</b></p>
+                    </a>
+                </div>
+                <div class="film">
+                    <a href="franchises/f&f.htm" class="hovertext">
+                        <img src="franchises/F&F/00.jpg" width="200mm" height="230mm">
+                        <p><b>FAST & FURIOUS</b></p>
+                    </a>
+                </div>
+                <div class="film">
+                    <a href="franchises/lotr.htm" class="hovertext">
+                        <img src="franchises/LOTR/00.png" width="200mm" height="230mm">
+                        <p><b>LORD OF THE RINGS</b></p>
+                    </a>
+                </div>
             </div>
             <br><br>
             <div style="width: 75%; display: inline-flex;">
@@ -300,8 +329,73 @@
             </div>
         </div>
 
-        <div class="tab-pane fade show active" id="netflix-pane" role="tabpanel" aria-labelledby="netflix" tabindex="2">
-
+        <div class="tab-pane fade show" id="netflix-tab-pane" role="tabpanel" aria-labelledby="netflix-tab" tabindex="2">
+            <h3><span>Most Watched NETFLIX of all time</span></h3>
+            <br>
+            <div class="films">
+                <div class="film">
+                    <a class="hovertext">
+                        <img src="assets/img/Movies/red notice.jpg" width="200mm" height="270mm" class="images">
+                        <p><b>Red Notice (2021)</b></p>
+                    </a>
+                </div>
+                <div class="film">
+                    <a class="hovertext">
+                        <img src="assets/img/Movies/don't look up.jpg" width="200mm" height="270mm" class="images">
+                        <p><b>Don't Look Up (2021)</b></p>
+                    </a>
+                </div>
+                <div class="film">
+                    <a class="hovertext">
+                        <img src="assets/img/Movies/bird box.jpg" width="200mm" height="270mm" class="images">
+                        <p><b>Bird Box (2018)</b></p>
+                    </a>
+                </div>
+                <div class="film">
+                    <a class="hovertext">
+                        <img src="assets/img/Movies/gray man.jpg" width="200mm" height="270mm" class="images">
+                        <p><b>The Gray Man (2022)</b></p>
+                    </a>
+                </div>
+                <div class="film">
+                    <a class="hovertext">
+                        <img src="assets/img/Movies/adam project.jpg" width="200mm" height="270mm" class="images">
+                        <p><b>The Adam Project (2022)</b></p>
+                    </a>
+                </div>
+            </div>
+            <div class="films">
+                <div class="film">
+                    <a class="hovertext">
+                        <img src="assets/img/Movies/extraction.jpg" width="200mm" height="270mm" class="images">
+                        <p><b>Extraction (2020)</b></p>
+                    </a>
+                </div>
+                <div class="film">
+                    <a class="hovertext">
+                        <img src="assets/img/Movies/purple hearts.jpg" width="200mm" height="270mm" class="images">
+                        <p><b>Purple Hearts (2022)</b></p>
+                    </a>
+                </div>
+                <div class="film">
+                    <a class="hovertext">
+                        <img src="assets/img/Movies/unforgivable.jpg" width="200mm" height="270mm" class="images">
+                        <p><b>The Unforgivable (2021)</b></p>
+                    </a>
+                </div>
+                <div class="film">
+                    <a class="hovertext">
+                        <img src="assets/img/Movies/irishman.jpg" width="200mm" height="270mm" class="images">
+                        <p><b>The Irishman (2019)</b></p>
+                    </a>
+                </div>
+                <div class="film">
+                    <a class="hovertext">
+                        <img src="assets/img/Movies/kissing booth2.jpg" width="200mm" height="270mm" class="images">
+                        <p><b>The Kissing Booth 2 (2020)</b></p>
+                    </a>
+                </div>
+            </div>
         </div>
 
         <div class="tab-pane fade show active" id="animated-pane" role="tabpanel" aria-labelledby="animated" tabindex="3">
