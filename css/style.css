@@ -8,12 +8,27 @@ body::-webkit-scrollbar {
   background-color: transparent;
 }
 
-
-body::-webkit-scrollbar-thumb {
-  background-color: white;
-  box-shadow: 0 -50vh 0 100vh green; //magic
+/*#################### SCROLL BAR ##########################*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
 }
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: #60a3bc;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 0, 0, 0.6);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #263159;
+}
+/*########################################################*/
 * {
   font-family: mainFont;
 }
@@ -121,7 +136,10 @@ body {
     grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
     gap:20px; */
 }
-
+.figtop10imdb li{
+  color:white;
+  margin-left:1%;
+}
 .imdb {
   height: 300px;
   border-radius: 12px;
@@ -130,9 +148,6 @@ body {
   background-color: #263159;
   margin-top: 5%;
   margin-bottom: 5%;
-}
-
-.navi123 {
 }
 /*##############################################################*/
 h1 {
