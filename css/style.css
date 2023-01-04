@@ -447,9 +447,7 @@ div > h3 {
   align-items: center;
   flex-direction: column;
 }
-<<<<<<< Updated upstream
-
-h1 {
+<<<<<<< Updated upstream h1 {
   text-align: center;
   color: black;
 }
@@ -479,12 +477,12 @@ a {
   text-decoration: none;
 }
 
-figcaption{
+figcaption {
   color: black;
   text-align: center;
   font-family: mainFont;
 }
-        
+
 .films {
   display: flex;
   flex-wrap: wrap;
@@ -501,7 +499,7 @@ figcaption{
 #images {
   margin: 0 30px 20px 30px;
   width: 200mm;
-  height: 270mm; 
+  height: 270mm;
 }
 
 div > a #hovertext {
@@ -514,7 +512,6 @@ a > p {
   margin-top: 0;
   font-family: mainFont;
 }
-=======
 .sm-logo {
   margin: 0 30px;
   width: 35px;
@@ -532,4 +529,3 @@ a > p {
   display: flex;
   justify-content: space-between;
 }
->>>>>>> Stashed changes
