@@ -40,6 +40,52 @@
         a {
             text-decoration: none;
         }
+
+        figcaption{
+            color: black;
+            text-align: center;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            font-family: mainFont;
+        }
+        
+        .films {
+            display: inline-flex;
+            justify-content: center;
+            width: 900px;
+            margin-bottom: 20px;
+        }
+
+        .film {
+            height: 200px;
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            margin: 10px;
+        }
+
+        .images {
+            border: solid 0;
+            width: 180px;
+            height: 250px;
+            margin: 0 30px 20px 30px;
+        }
+
+        div > a {
+            text-decoration: none;
+            color: black;
+            font-family: mainFont;
+            margin: 0 20px 20px 20px;
+        }
+
+        a > p {
+            color: black;
+            text-align: center;
+            margin-top: 0;
+            font-family: mainFont;
+        }   
+
     </style>
 </head>
 
@@ -88,120 +134,179 @@
         </li>
     </ul>
 
-    <div class="tab-pane fade show active" id="franchises-pane" role="tabpanel" aria-labelledby="franchises"
-        tabindex="0">
-        <div class="franchises">
-            <h3><span>Top Movie Franchises</span></h3>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="watched-tab-pane" role="tabpanel" aria-labelledby="watched-tab" tabindex="0">
+            <div class="franchises">
+                <h3><span>Most Watched movies of all time</span></h3>
+            </div>
+            <div class="films">
+                <div class="films">
+                    <a class="hovertext">
+                        <img src="assets/img/Movies/avatar.jpg" width="200mm" height="270mm" class="images">
+                        <p><b>Avatar (2009)</b></p>
+                    </a>
+                </div>
+                <div class="films">
+                    <a>
+                        <img src="franchises/MCU/22.jpg" width="200mm" height="270mm" class="images">
+                        <p><b>Avengers: Endgame (2019)</b></p>
+                    </a>
+                </div>
+                <div class="films">
+                    <a>
+                        <img src="assets/img/Movies/titanic.jpg" width="200mm" height="270mm" class="images">
+                        <p><b>Titanic (1995)</b></p>
+                    </a>
+                </div>
+                <div class="films">
+                    <a>
+                        <img src="franchises/STAR WARS/7.jpg" width="200mm" height="270mm" class="images">
+                        <p><b>Star Wars: The Force Awakens (2013)</b></p>
+                    </a>
+                </div>
+            </div>
+            <div class="films">
+                <div class="films">
+                    <a class="hovertext">
+                        <img src="franchises/MCU/19.jpg" width="200mm" height="270mm" class="images">
+                        <p><b>Avengers: Infinity War (2018)</b></p>
+                    </a>
+                </div>
+                <div class="films">
+                    <a>
+                        <img src="franchises/MCU/32.jpg" width="200mm" height="270mm" class="images">
+                        <p><b>Spider-Man: No Way Home (2021)</b></p>
+                    </a>
+                </div>
+                <div class="films">
+                    <a>
+                        <img src="assets/img/Movies/jurassic world.jpg" width="200mm" height="270mm" class="images">
+                        <p><b>Jurassic World (2015)</b></p>
+                    </a>
+                </div>
+                <div class="films">
+                    <a>
+                        <img src="assets/img/Movies/lion king.jpg" width="200mm" height="270mm" class="images">
+                        <p><b>The Lion King (2019)</b></p>
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="movies">
-            <a href="franchises/dcu.htm" title="DCU">
-                <img src="franchises/DCU/00.jpg" width="200mm" height="230mm">
-                <p><b>DC UNIVERSE</b></p>
-            </a>
-            <a href="franchises/mcu.htm">
-                <img src="franchises/MCU/00.jpg" width="200mm" height="230mm">
-                <p><b>MARVEL CINEMATIC UNIVERSE</b></p>
-            </a>
-            <a href="franchises/starwars.htm">
-                <img src="franchises/STAR WARS/00.png" width="200mm" height="230mm">
-                <p><b>STAR WARS</b></p>
-            </a>
-            <a href="franchises/x-men.htm">
-                <img src="franchises/X-MEN/00.jpg" width="200mm" height="230mm">
-                <p><b>X-MEN</b></p>
-            </a>
-            <a href="franchises/wizards.htm">
-                <img src="franchises/WIZARDS/00.jpg" width="200mm" height="230mm">
-                <p><b>THE WIZARDING WORLD</b></p>
-            </a>
-            <a href="franchises/tform.htm">
-                <img src="franchises/TFORM/00.jpg" width="200mm" height="230mm">
-                <p><b>TRANSFORMERS</b></p>
-            </a>
-            <a href="franchises/mi6.htm">
-                <img src="franchises/MI6/00.png" width="200mm" height="230mm">
-                <p><b>MISSION: IMPOSSIBLE</b></p>
-            </a>
-            <a href="franchises/potc.htm">
-                <img src="franchises/POTC/00.jpg" width="200mm" height="230mm">
-                <p><b>PIRATES OF THE CARIBBEAN</b></p>
-            </a>
-            <a href="franchises/f&f.htm">
-                <img src="franchises/F&F/00.jpg" width="200mm" height="230mm">
-                <p><b>FAST & FURIOUS</b></p>
-            </a>
-            <a href="franchises/lotr.htm">
-                <img src="franchises/LOTR/00.png" width="200mm" height="230mm">
-                <p><b>LORD OF THE RINGS</b></p>
-            </a>
+
+        <div class="tab-pane fade show" id="franchises-pane" role="tabpanel" aria-labelledby="franchises" tabindex="1">
+            <div class="franchises">
+                <h3><span>Top Movie Franchises</span></h3>
+            </div>
+            <div class="movies">
+                <a href="franchises/dcu.htm" title="DCU">
+                    <img src="franchises/DCU/00.jpg" width="200mm" height="230mm">
+                    <p><b>DC UNIVERSE</b></p>
+                </a>
+                <a href="franchises/mcu.htm">
+                    <img src="franchises/MCU/00.jpg" width="200mm" height="230mm">
+                    <p><b>MARVEL CINEMATIC UNIVERSE</b></p>
+                </a>
+                <a href="franchises/starwars.htm">
+                    <img src="franchises/STAR WARS/00.png" width="200mm" height="230mm">
+                    <p><b>STAR WARS</b></p>
+                </a>
+                <a href="franchises/x-men.htm">
+                    <img src="franchises/X-MEN/00.jpg" width="200mm" height="230mm">
+                    <p><b>X-MEN</b></p>
+                </a>
+                <a href="franchises/wizards.htm">
+                    <img src="franchises/WIZARDS/00.jpg" width="200mm" height="230mm">
+                    <p><b>THE WIZARDING WORLD</b></p>
+                </a>
+                <a href="franchises/tform.htm">
+                    <img src="franchises/TFORM/00.jpg" width="200mm" height="230mm">
+                    <p><b>TRANSFORMERS</b></p>
+                </a>
+                <a href="franchises/mi6.htm">
+                    <img src="franchises/MI6/00.png" width="200mm" height="230mm">
+                    <p><b>MISSION: IMPOSSIBLE</b></p>
+                </a>
+                <a href="franchises/potc.htm">
+                    <img src="franchises/POTC/00.jpg" width="200mm" height="230mm">
+                    <p><b>PIRATES OF THE CARIBBEAN</b></p>
+                </a>
+                <a href="franchises/f&f.htm">
+                    <img src="franchises/F&F/00.jpg" width="200mm" height="230mm">
+                    <p><b>FAST & FURIOUS</b></p>
+                </a>
+                <a href="franchises/lotr.htm">
+                    <img src="franchises/LOTR/00.png" width="200mm" height="230mm">
+                    <p><b>LORD OF THE RINGS</b></p>
+                </a>
+            </div>
+            <br><br>
+            <div style="width: 75%; display: inline-flex;">
+                <table class="table table-dark table-bordered">
+                    <tr>
+                        <th>Franchise Name</th>
+                        <th>First Project</th>
+                        <th>Last Project</th>
+                        <th>Total Box Office</th>
+                    </tr>
+                    <tr>
+                        <th>Marvel Cinematic Universe</th>
+                        <td>Iron Man (2008)</td>
+                        <td>Black Panther: Wakanda Forever (2022)</td>
+                        <td>27.98B</td>
+                    </tr>
+                    <tr>
+                        <th>Star Wars</th>
+                        <td>Star Wars Episode IV: A New Hope (1977)</td>
+                        <td>Andor (2022)</td>
+                        <td>10.31B</td>
+                    </tr>
+                    <tr>
+                        <th>The Wizarding World</th>
+                        <td>Harry Potter and the Philosopher's Stone (2001)</td>
+                        <td>Fantastic Beasts: The Secrets of Dumbledore (2022)</td>
+                        <td>9.66B</td>
+                    </tr>
+                    <tr>
+                        <th>Fast and Furious</th>
+                        <td>The Fast and the Furious (2001)</td>
+                        <td>F9: The Fast Saga (2021)</td>
+                        <td>6.62B</td>
+                    </tr>
+                    <tr>
+                        <th>DC Universe</th>
+                        <td>Man of Steel (2013)</td>
+                        <td>Black Adam (2022)</td>
+                        <td>6.19B</td>
+                    </tr>
+                    <tr>
+                        <th>X-Men</th>
+                        <td>X-Men (2000)</td>
+                        <td>The New Mutants (2020)</td>
+                        <td>6.08B</td>
+                    </tr>
+                    <tr>
+                        <th>The Lord of The Rings</th>
+                        <td>The Fellowship of The Ring (2001)</td>
+                        <td>The Lord of The Rings: The Rings of Power (2022)</td>
+                        <td>5.95B</td>
+                    </tr>
+                    <tr>
+                        <th>Transformers</th>
+                        <td>Transformers (2007)</td>
+                        <td>Bumblebee (2018)</td>
+                        <td>4.85B</td>
+                    </tr>
+                </table>
+            </div>
         </div>
-        <br><br>
-        <div style="width: 75%; display: inline-flex;">
-            <table class="table table-dark table-bordered">
-                <tr>
-                    <th>Franchise Name</th>
-                    <th>First Project</th>
-                    <th>Last Project</th>
-                    <th>Total Box Office</th>
-                </tr>
-                <tr>
-                    <th>Marvel Cinematic Universe</th>
-                    <td>Iron Man (2008)</td>
-                    <td>Black Panther: Wakanda Forever (2022)</td>
-                    <td>27.98B</td>
-                </tr>
-                <tr>
-                    <th>Star Wars</th>
-                    <td>Star Wars Episode IV: A New Hope (1977)</td>
-                    <td>Andor (2022)</td>
-                    <td>10.31B</td>
-                </tr>
-                <tr>
-                    <th>The Wizarding World</th>
-                    <td>Harry Potter and the Philosopher's Stone (2001)</td>
-                    <td>Fantastic Beasts: The Secrets of Dumbledore (2022)</td>
-                    <td>9.66B</td>
-                </tr>
-                <tr>
-                    <th>Fast and Furious</th>
-                    <td>The Fast and the Furious (2001)</td>
-                    <td>F9: The Fast Saga (2021)</td>
-                    <td>6.62B</td>
-                </tr>
-                <tr>
-                    <th>DC Universe</th>
-                    <td>Man of Steel (2013)</td>
-                    <td>Black Adam (2022)</td>
-                    <td>6.19B</td>
-                </tr>
-                <tr>
-                    <th>X-Men</th>
-                    <td>X-Men (2000)</td>
-                    <td>The New Mutants (2020)</td>
-                    <td>6.08B</td>
-                </tr>
-                <tr>
-                    <th>The Lord of The Rings</th>
-                    <td>The Fellowship of The Ring (2001)</td>
-                    <td>The Lord of The Rings: The Rings of Power (2022)</td>
-                    <td>5.95B</td>
-                </tr>
-                <tr>
-                    <th>Transformers</th>
-                    <td>Transformers (2007)</td>
-                    <td>Bumblebee (2018)</td>
-                    <td>4.85B</td>
-                </tr>
-            </table>
+
+        <div class="tab-pane fade show active" id="netflix-pane" role="tabpanel" aria-labelledby="netflix" tabindex="2">
+
         </div>
-    </div>
 
-    <div class="tab-pane fade show active" id="netflix-pane" role="tabpanel" aria-labelledby="netflix" tabindex="0">
+        <div class="tab-pane fade show active" id="animated-pane" role="tabpanel" aria-labelledby="animated" tabindex="3">
 
-    </div>
-
-    <div class="tab-pane fade show active" id="animated-pane" role="tabpanel" aria-labelledby="animated" tabindex="0">
-
+        </div>
     </div>
 </body>
 
