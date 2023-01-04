@@ -176,13 +176,13 @@ div > h3 {
 .img_tvshows {
   border-radius: 12px;
   box-shadow: 19px 19px 60px #7d7b73;
-  width: 150px;
+  width: 180px;
   height: 250px;
 }
 
 .figtvshows figcaption {
   text-align: center;
-  width: 150px;
+  width: 180px;
   margin-top: 14px;
   color: black;
 }
@@ -202,7 +202,6 @@ div > h3 {
 .tvshows {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
 }
 
 .tvshow {
