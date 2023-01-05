@@ -31,12 +31,49 @@ body::-webkit-scrollbar {
 /*########################################################*/
 * {
   font-family: mainFont;
+  font-weight: bold;
 }
 
 a {
   text-decoration: none;
   color: #251749;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+a.hovertext:hover {
+  transform: scale(1.1);
+}
+
+h1 {
+  text-align: center;
+  color: black;
+}
+
+div {
+  text-align: center;
+}
+
+img {
+  margin: 0 20px 0 20px;
+  border-radius: 10px;
+}
+
+.movies {
+  display: inline;
+  justify-content: center;
+  display: flex;
+}
+
+p {
+  color: black;
+  text-align: center;
+  margin: 0;
+}
+
+figcaption {
+  color: black;
+  text-align: center;
+  font-family: mainFont;
 }
 
 .navigation > ul > li {
@@ -76,8 +113,12 @@ nav {
   background-color: rgb(0, 0, 0, 0.6);
 }
 
+.container-fluid {
+  margin: 0 9%;
+}
+
 body {
-  background-color: lightblue;
+  background-color: rgb(90, 202, 240);
 }
 
 /*#####################  IMDB top 10 ######################*/
@@ -158,19 +199,6 @@ h1 {
   color: white;
 }
 
-/* div {
-    text-align: center;
-} */
-
-/* img {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-right: 20px;
-    margin-left: 20px;
-    border-radius: 10px;
-    border: solid 4px black;
-} */
-
 .movies {
   justify-content: center;
   display: flex;
@@ -191,7 +219,7 @@ div > h3 {
   margin: 30px 0 20px 0;
 }
 /*#################### TV SHOWS ####################*/
-.img_tvshows {
+/* .img_tvshows {
   border-radius: 12px;
   box-shadow: 19px 19px 60px #7d7b73;
   width: 180px;
@@ -226,7 +254,7 @@ div > h3 {
   height: 200px;
   border-radius: 12px;
   display: block;
-}
+} */
 /*##################################################################*/
 
 /*########################## HomeScreen ##########################*/
@@ -234,7 +262,7 @@ div > h3 {
   width: 100%;
   display: flex;
   overflow: auto;
-  min-height: 100vh;
+  min-height: 100%;
   overflow-x: hidden;
   flex-direction: column;
 }
@@ -329,15 +357,13 @@ div > h3 {
   height: 100%;
   display: flex;
   align-items: center;
-  padding-top: 38px;
   flex-direction: row;
-  padding-bottom: 38px;
 }
 
 .home-text03,
 .home-text04,
 .home-text05 {
-  color: rgb(255, 255, 255);
+  color: white;
   font-weight: bold;
   padding: 10px;
   margin: 10px;
@@ -456,45 +482,6 @@ div > h3 {
   display: flex;
   align-items: center;
   flex-direction: column;
-}
-h1 {
-  text-align: center;
-  color: black;
-}
-
-div {
-  text-align: center;
-}
-
-img {
-  margin: 0 20px 0 20px;
-  border-radius: 10px;
-}
-
-.movies {
-  display: inline;
-  justify-content: center;
-  display: flex;
-}
-
-p {
-  color: black;
-  text-align: center;
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-a.hovertext:hover {
-  transform: scale(1.1);
-}
-
-figcaption {
-  color: black;
-  text-align: center;
-  font-family: mainFont;
 }
 
 .films, .tv-shows {
