@@ -487,29 +487,37 @@ a {
   text-decoration: none;
 }
 
+a.hovertext:hover {
+  transform: scale(1.1);
+}
+
 figcaption {
   color: black;
   text-align: center;
   font-family: mainFont;
 }
 
-.films {
+.films, .tv-shows {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 20px;
 }
 
-.film {
+.film, .tv-show {
   display: inline-flex;
   justify-content: center;
   margin: 0 10px 20px 10px;
 }
 
 .images {
-  /*margin: 0 30px 20px 30px;
-  width: 200mm;
-  height: 270mm;*/
+  width: 200px;
+  height: 270px;
+}
+
+.imagesf {
+  width: 200px;
+  height: 230px;
 }
 
 div > a #hovertext {
