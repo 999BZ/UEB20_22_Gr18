@@ -1,0 +1,104 @@
+.main {
+    margin-top: 5%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.form1 {
+    display: block;
+}
+
+.ask {
+    font-size: 30px;
+}
+
+.asked {
+    margin: 20px;
+    display: inline;
+}
+
+.input, .field {
+    border: 2px solid black;
+}
+
+.field {
+    width: 20%;
+    height: 50px;
+    border-radius: 30px;
+    padding: 0 20px;
+    background-color: transparent;
+    color: black;
+}
+
+.fields {
+    margin: 10px;
+}
+
+.infos {
+    display: inline;
+    justify-content: space-around;
+}
+
+.forgot {
+    text-decoration: none;
+    color: rgb(2, 27, 29);
+}
+
+.forgot:hover {
+    color: black;
+}
+
+.checkbox {
+    margin: 0 10px;
+}
+
+input[type="checkbox"] {
+    background-color: black;
+    color: black;
+}
+
+.sign-in {
+    background-color: transparent;
+}
+
+.sign-in:hover {
+    background-color: lightgray;
+}
+
+.or-options {
+    margin: 20px;
+}
+
+.options {
+    justify-content: center;
+}
+
+.option {
+    margin: 5px;
+    padding: 15px;
+    width: 30%;
+    height: 20%;
+    border-radius: 30px;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    background-color: transparent;
+}
+
+.option:hover {
+    color: black;
+    background-color: lightgray;
+}
+
+.sign-up {
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+}
+
+.sign-up:hover {
+    text-decoration: none;
+    color: rgb(2, 27, 29);
+}
