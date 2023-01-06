@@ -118,7 +118,29 @@ nav {
 }
 
 body {
-  background-color: rgb(90, 202, 240);
+  background-image: radial-gradient(
+    circle,
+    rgb(16, 16, 96),
+    cyan,
+    rgb(31, 31, 104)
+  );
+  /*background: rgb(151, 35, 86);
+  background: -moz-radial-gradient(
+    circle,
+    rgba(151, 35, 86, 1) 0%,
+    rgba(0, 61, 133, 1) 100%
+  );
+  background: -webkit-radial-gradient(
+    circle,
+    rgba(151, 35, 86, 1) 0%,
+    rgba(0, 61, 133, 1) 100%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(151, 35, 86, 1) 0%,
+    rgba(0, 61, 133, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#972356",endColorstr="#003d85",GradientType=1);*/
 }
 
 /*#####################  IMDB top 10 ######################*/
@@ -548,4 +570,6 @@ a > p {
 .explore-cards {
   display: flex;
   justify-content: space-between;
+}
+.nav-link:hover {
 }

@@ -1,9 +1,10 @@
 @font-face {
   font-family: mainFont;
-  src: url("../assets/fonts/Oswald-VariableFont_wght.ttf");
+  src: url("../assets/fonts/Rubik-VariableFont_wght.ttf");
 }
 
-h1, h3 {
+h1,
+h3 {
   text-align: center;
   color: white;
   font-family: mainFont;
