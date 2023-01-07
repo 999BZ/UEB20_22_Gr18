@@ -2,21 +2,22 @@
   font-family: mainFont;
   src: url("../assets/fonts/Rubik-VariableFont_wght.ttf");
 }
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
   width: 0.5em;
   z-index: 100;
   background-color: transparent;
-}
+} */
 
 /*#################### SCROLL BAR ##########################*/
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 3px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
   background: #60a3bc;
+  background-color: transparent;
 }
 
 /* Handle */
@@ -141,6 +142,7 @@ body {
     rgba(0, 61, 133, 1) 100%
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#972356",endColorstr="#003d85",GradientType=1);*/
+  overflow:overlay;
 }
 
 /*#####################  IMDB top 10 ######################*/
@@ -189,11 +191,6 @@ body {
   color: black;
 }
 
-.imdbs {
-  /* display:grid;
-    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-    gap:20px; */
-}
 .figtop10imdb li {
   color: white;
   /* margin-left: 1%; */
@@ -571,5 +568,5 @@ a > p {
   display: flex;
   justify-content: space-between;
 }
-.nav-link:hover {
-}
+/* .nav-link:hover {
+} */
