@@ -3,14 +3,10 @@
   src: url("../assets/fonts/Rubik-VariableFont_wght.ttf");
 }
 
-h1,
-h3 {
-  text-align: center;
-  color: white;
+* {
+  color: black;
+  font-weight: bold;
   font-family: mainFont;
-}
-
-div {
   text-align: center;
 }
 
@@ -194,11 +190,11 @@ body {
   height: 100%;
   display: flex;
   align-items: center;
-  padding-top: 38px;
-  flex-direction: row;
-  padding-bottom: 38px;
 }
 .home-links1 {
+  display: inline;
+  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
   margin-left: 33px;
   flex-direction: row;
@@ -206,10 +202,9 @@ body {
 .home-text03,
 .home-text04,
 .home-text05 {
-  color: rgb(255, 255, 255);
   font-weight: bold;
-  padding: 10px 15px;
-  margin: 0 0 0 10px;
+  padding: 10px 10px;
+  margin: 10px;
 }
 
 .home-text03:hover,

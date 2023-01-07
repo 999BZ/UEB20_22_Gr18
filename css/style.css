@@ -114,10 +114,6 @@ nav {
   background-color: rgb(0, 0, 0, 0.6);
 }
 
-.container-fluid {
-  margin: 0 9%;
-}
-
 body {
   background-image: radial-gradient(
     circle,
@@ -125,6 +121,7 @@ body {
     cyan,
     rgb(31, 31, 104)
   );
+  background-position-y: center;
   /*background: rgb(151, 35, 86);
   background: -moz-radial-gradient(
     circle,
@@ -257,7 +254,7 @@ footer {
 /*##############################################################*/
 h1 {
   text-align: center;
-  color: white;
+  color: black;
 }
 
 .movies {
@@ -279,44 +276,6 @@ p {
 div > h3 {
   margin: 30px 0 20px 0;
 }
-/*#################### TV SHOWS ####################*/
-/* .img_tvshows {
-  border-radius: 12px;
-  box-shadow: 19px 19px 60px #7d7b73;
-  width: 180px;
-  height: 250px;
-}
-
-.figtvshows figcaption {
-  text-align: center;
-  width: 180px;
-  margin-top: 14px;
-  color: black;
-}
-
-.figtvshows {
-  transition: transform 0.5s;
-  width: 140px;
-  height: 220px;
-  margin: 100px;
-}
-
-.figtvshows:hover {
-  transform: scale(1.2);
-  color: black;
-}
-
-.tvshows {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-}
-
-.tvshow {
-  height: 200px;
-  border-radius: 12px;
-  display: block;
-} */
-/*##################################################################*/
 
 /*########################## HomeScreen ##########################*/
 .home-container {
@@ -421,6 +380,7 @@ div > h3 {
   flex-direction: row;
 }
 
+.franch,
 .home-text03,
 .home-text04,
 .home-text05 {
@@ -430,6 +390,7 @@ div > h3 {
   margin: 10px;
 }
 
+.franch:hover,
 .home-text03:hover,
 .home-text04:hover,
 .home-text05:hover {
@@ -447,13 +408,11 @@ div > h3 {
 }
 .home-get-started {
   cursor: pointer;
-  display: flex;
+  text-align: center;
   transition: 0.3s;
   align-items: center;
-  padding-top: 16px;
-  padding-left: 24px;
+  padding: 16px;
   border-radius: 56px;
-  padding-right: 24px;
   flex-direction: column;
   background-color: #000000;
 }
@@ -517,15 +476,10 @@ div > h3 {
 .home-get-started1 {
   color: white;
   cursor: pointer;
-  display: flex;
   margin-top: 40px;
   transition: 0.3s;
-  align-items: center;
-  padding-top: 16px;
-  padding-left: 32px;
+  padding: 16px 32px;
   border-radius: 56px;
-  padding-right: 32px;
-  flex-direction: column;
   background-color: #251749;
 }
 .home-get-started1:hover {
@@ -612,3 +566,6 @@ a > p {
 }
 /* .nav-link:hover {
 } */
+.franch {
+  color: black;
+}
