@@ -187,8 +187,6 @@ body {
   object-fit: cover;
 }
 .home-left {
-  height: 100%;
-  display: flex;
   align-items: center;
 }
 .home-links1 {
@@ -197,6 +195,9 @@ body {
   flex-wrap: wrap;
   align-items: center;
   margin-left: 33px;
+  flex-direction: row;
+  display: block;
+  align-items: center;
   flex-direction: row;
 }
 .home-text03,
