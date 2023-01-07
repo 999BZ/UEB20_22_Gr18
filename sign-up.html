@@ -14,32 +14,44 @@
 <body background="assets/img/bg.jpg" style="background-size: cover;">
     <div class="main">
         <div class="asked">
-            <p class="ask"><b>Have an Account?</b></p>
+            <p class="ask"><b>Create an Account: </b></p>
         </div>
         <form class="form1">
+            <div class="fields inputs">
+                <input type="text" id="email-field" class="field input" required placeholder="First Name">
+            </div>
+            <div class="fields inputs">
+                <input type="text" id="password-field" class="field input" required placeholder="Last Name">
+            </div>
+            <div class="fields inputs">
+                <input type="text" id="password-field" class="field input" required placeholder="Username">
+            </div>
             <div class="fields inputs">
                 <input type="email" id="email-field" class="field input" required placeholder="Email">
             </div>
             <div class="fields inputs">
                 <input type="password" id="password-field" class="field input" required placeholder="Password">
             </div>
+            <div class="fields inputs">
+                <input type="password" id="password-field" class="field input" required placeholder="Confirm Password">
+            </div>
             <div class="fields">
-                <button type="submit" id="sign-in" class="field sign-up">Sign In</button>
+                <button type="submit" id="sign-up" class="field sign-up">Sign Up</button>
             </div>
             <div class="infos">
 		        <label class="checkbox">Remember Me <input type="checkbox" checked></label> 
-				<a href="#" class="forgot checkbox">Forgot Password</a>
 	        </div>
         </form>
-        <p class="or-options"> - Or Sign In With - </p>
+        <p class="or-options"> - Or Sign Up With - </p>
 	    <div class="options">
 	        <a href="#" class="option"><img src="assets/img/facebook.png" class="figs"></a>
 	        <a href="#" class="option"><img src="assets/img/google.png" class="figs"></a>
 	    </div>
         <div class="asked">
-            <p>Don't Have an Account?! <a href="sign-up.html" class="sign-up"> Sign Up</a> or <a href="index.html" class="sign-up">
+            <p>Have an Account?! <a href="sign_in.html" class="sign-up"> Sign In</a> or <a href="index.html" class="sign-up">
                 Continue as guest</a></p>
         </div>
     </div>
+
 </body>
 </html>
