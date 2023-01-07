@@ -10,7 +10,40 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="shortcut icon" href="assets/img/logotab.png">
+    <script>
+        const button = document.getElementById('home-get-started1');
+
+        console.log(button);
+
+        button.addEventListener('mouseenter', function () {
+            console.log(this);
+
+            this.classList.add('arrow');
+        });
+
+        button.addEventListener('mouseleave', function () {
+
+            console.log(this);
+
+            this.classList.remove('arrow');
+        });
+
+    </script>
     <style data-tag="reset-style-sheet">
+        .arrow {
+            display: inline-block;
+            content: '➤';
+            position: relative;
+            top: -2px;
+            transform: rotate(90deg);
+            font-size: 14px;
+            margin-left: 5px;
+        }
+
+        html {
+            line-height: 1.15;
+        }
+
         body {
             background-image: url('assets/img/Home/2180133.jpg');
             margin: 0;
@@ -110,11 +143,17 @@
                     <h1 class="home-text07">
                         Guide for unlimited movies, TV shows, and more.
                     </h1>
+                    <!-- <div class="enlarged-logo" style="display: flex; justify-content: center; margin: 1%;">
+                        <img src="/assets/img/logotab.png" width="65%" alt="">
+                    </div> -->
                     <p class="home-text08">Ready to watch?</p>
                     <div class="home-container1">
                         <div class="home-container2">
-                            <div class="home-get-started1">
-                                <a href="index.html"><span class="home-text09">Continue as guest -&gt;</span></a>
+                            <div class="home-get-started1" id="home-get-started1"
+                                style="padding-bottom: 1px; padding-top: 11px;">
+                                <a href="index.html" style="display: flex; justify-content: center;"><span
+                                        class="home-text09">Continue as
+                                        a guest</span></a>
                             </div>
                         </div>
                     </div>
