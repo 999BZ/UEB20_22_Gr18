@@ -11,33 +11,24 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="shortcut icon" href="assets/img/logotab.png">
     <script>
-        const button = document.getElementById('home-get-started1');
 
-        console.log(button);
+        const button = document.getElementById('arrow');
 
         button.addEventListener('mouseenter', function () {
-            console.log(this);
-
-            this.classList.add('arrow');
+            this.classList.add('arrow-hover');
         });
 
         button.addEventListener('mouseleave', function () {
-
-            console.log(this);
-
-            this.classList.remove('arrow');
+            this.classList.remove('arrow-hover');
         });
-
     </script>
     <style data-tag="reset-style-sheet">
         .arrow {
-            display: inline-block;
-            content: '➤';
-            position: relative;
-            top: -2px;
-            transform: rotate(90deg);
-            font-size: 14px;
-            margin-left: 5px;
+            display: none;
+        }
+
+        .arrow-hover {
+            display: inline;
         }
 
         html {
@@ -153,7 +144,7 @@
                                 style="padding-bottom: 1px; padding-top: 11px;">
                                 <a href="index.html" style="display: flex; justify-content: center;"><span
                                         class="home-text09">Continue as
-                                        a guest</span></a>
+                                        a guest</span><span class="arrow" id="arrow">➤</span></a>
                             </div>
                         </div>
                     </div>
@@ -161,6 +152,44 @@
             </section>
         </div>
     </div>
+    <footer>
+        <div class="container">
+            <div class="row" style="padding-top: 3%;">
+                <div class="col-sm-4">
+                    <h4 style="color:white">Contact Us</h4>
+                    <p style="color:white">Email: FlixFeast@gmail.com</p>
+                    <p style="color:white">Phone: +383 44 123 321</p>
+                </div>
+                <div class="col-sm-4">
+                    <h4 style="color:white">About Us</h4>
+
+                    <p style="color:white">FlixFeast is a movie streaming website with a huge selection
+                        of popular films and TV shows. Sign up for a free trial and start watching today!</p>
+                </div>
+                <div class="col-sm-4">
+                    <h4 style="color:white">Follow Us</h4>
+                    <p style="color:white">Stay up to date with our latest news and updates</p>
+                    <ul class="list-unstyled">
+                        <li><a href="#" style="color:white">Twitter</a></li>
+                        <li><a href="#" style="color:white">Facebook</a></li>
+                        <li><a href="#" style="color:white">Instagram</a></li>
+                        <li><a href="#" style="color:white">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p style="color:white; margin-bottom: 20px;">Copyright 2021 Your Company. All rights reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 </body>
 
 </html>
