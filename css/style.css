@@ -221,6 +221,7 @@ footer {
   background-color: rgb(0, 0, 0, 0.6);
   color: white;
 }
+
 @media (min-width: 900px) {
   .img_top10imdb {
     margin-top: 10%;
@@ -567,4 +568,30 @@ a > p {
 } */
 .franch {
   color: black;
+}
+
+a.hovertext {
+  position: relative;
+}
+
+.heart-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  outline: none;
+}
+
+.heart-button:before {
+  content: "\2665";
+  font-size: 30px;
+  color: #fff;
+}
+
+.heart-button.clicked:before {
+  color: #ff0000;
 }
