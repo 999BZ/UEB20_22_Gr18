@@ -379,16 +379,44 @@ div > h3 {
   flex-direction: row;
 }
 
+#dropdown-menu{
+  background-color: rgb(0, 0, 0, 0.6);
+  list-style-type: none;
+}
+.dropdown-item{
+  color:white;
+  margin-bottom:20px;
+}
+.dropdown-item-L{
+  color:white;
+}
+.dropdownall{
+  display:block;
+}
+
 .franch,
 .home-text03,
 .home-text04,
 .home-text05 {
+  display:none;
+}
+@media (min-width: 700px) {
+  .franch,
+.home-text03,
+.home-text04,
+.home-text05 {
+  display:inline;
   color: white;
   font-weight: bold;
   padding: 10px;
   margin: 10px;
   flex-wrap: wrap;
 }
+.dropdownall{
+  display:none;
+}
+}
+
 
 .franch:hover,
 .home-text03:hover,
