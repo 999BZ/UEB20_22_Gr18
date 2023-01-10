@@ -379,39 +379,40 @@ div > h3 {
   flex-direction: row;
 }
 
-#dropdown-menu{
+#dropdown-menu {
   background-color: rgb(0, 0, 0, 0.6);
   list-style-type: none;
-  margin-bottom:0px;
-  padding-left:0px;
-  padding-bottom:10px;
-  padding-top:10px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
-.dropdown-itemFirst,.dropdown-itemMiddle{
+.dropdown-itemFirst,
+.dropdown-itemMiddle {
   color: white;
   font-weight: bold;
   flex-wrap: wrap;
-  margin-bottom:20px;
+  margin-bottom: 20px;
   padding: 10px;
 }
 
-.dropdown-itemLast{
+.dropdown-itemLast {
   color: white;
   font-weight: bold;
   flex-wrap: wrap;
   padding: 10px;
 }
-.dropdownall{
-  display:block;
+.dropdownall {
+  display: block;
 }
-#dropdown-menu li{
-  padding:0 25%;
+#dropdown-menu li {
+  padding: 0 25%;
+  margin-bottom: 20px;
 }
-
 
 .dropdown-itemFirst:hover,
 .dropdown-itemMiddle:hover,
-.dropdown-itemLast:hover{
+.dropdown-itemLast:hover {
   color: #251749;
   border-radius: 20px;
   background-color: white;
@@ -420,30 +421,32 @@ div > h3 {
 .home-text03,
 .home-text04,
 .home-text05 {
-  display:none;
+  display: none;
 }
 @media (min-width: 768px) {
   .franch,
-.home-text03,
-.home-text04,
-.home-text05 {
-  display:inline;
-  color: white;
-  font-weight: bold;
-  padding: 10px;
-  margin: 10px;
-  flex-wrap: wrap;
-}
-.dropdownall{
-  display:none;
-}
-}
-@media (min-width: 600px) {
-  #dropdown-menu li{
-    padding:0 42%;
+  .home-text03,
+  .home-text04,
+  .home-text05 {
+    display: inline;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px;
+    flex-wrap: wrap;
+  }
+  .dropdownall {
+    display: none;
+  }
+  .container-fluid {
+    width: 100%;
   }
 }
-
+@media (min-width: 600px) {
+  #dropdown-menu li {
+    padding: 0 42%;
+  }
+}
 
 .franch:hover,
 .home-text03:hover,
