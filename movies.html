@@ -15,6 +15,18 @@
             color: #251749;
             border-radius: 20px;
         }
+
+        th > a {
+            color: white;
+            text-decoration: none;
+        }
+
+        th > a:hover {
+            color: black;
+        }
+        th.fn:hover {
+            background-color: gray;
+        }
     </style>
 </head>
 
@@ -215,7 +227,7 @@
             </div>
             <br><br>
             <div style="width: 75%; display: inline-flex;">
-                <table class="table table-dark table-bordered">
+                <table class="table table-dark table-bordered" cellpadding="1" cellspacing="1" style="border: solid 1px gray;">
                     <tr>
                         <th>Franchise Name</th>
                         <th>First Project</th>
@@ -223,49 +235,49 @@
                         <th>Total Box Office</th>
                     </tr>
                     <tr>
-                        <th>Marvel Cinematic Universe</th>
+                        <th class="fn"><a href="franchises/mcu.htm">Marvel Cinematic Universe</a></th>
                         <td>Iron Man (2008)</td>
                         <td>Black Panther: Wakanda Forever (2022)</td>
                         <td>27.98B</td>
                     </tr>
                     <tr>
-                        <th>Star Wars</th>
+                        <th class="fn"><a href="franchises/starwars.htm">Star Wars</a></th>
                         <td>Star Wars Episode IV: A New Hope (1977)</td>
                         <td>Andor (2022)</td>
                         <td>10.31B</td>
                     </tr>
                     <tr>
-                        <th>The Wizarding World</th>
+                        <th class="fn"><a href="franchises/wizards.htm">The Wizarding World</a></th>
                         <td>Harry Potter and the Philosopher's Stone (2001)</td>
                         <td>Fantastic Beasts: The Secrets of Dumbledore (2022)</td>
                         <td>9.66B</td>
                     </tr>
                     <tr>
-                        <th>Fast and Furious</th>
+                        <th class="fn"><a href="franchises/f&f.htm">Fast and Furious</a></th>
                         <td>The Fast and the Furious (2001)</td>
                         <td>F9: The Fast Saga (2021)</td>
                         <td>6.62B</td>
                     </tr>
                     <tr>
-                        <th>DC Universe</th>
+                        <th class="fn"><a href="franchises/dcu.htm">DC Universe</a></th>
                         <td>Man of Steel (2013)</td>
                         <td>Black Adam (2022)</td>
                         <td>6.19B</td>
                     </tr>
                     <tr>
-                        <th>X-Men</th>
+                        <th class="fn"><a href="franchises/x-men.htm">X-Men</a></th>
                         <td>X-Men (2000)</td>
                         <td>The New Mutants (2020)</td>
                         <td>6.08B</td>
                     </tr>
                     <tr>
-                        <th>The Lord of The Rings</th>
+                        <th class="fn"><a href="franchises/lotr.htm">The Lord of The Rings</a></th>
                         <td>The Fellowship of The Ring (2001)</td>
                         <td>The Lord of The Rings: The Rings of Power (2022)</td>
                         <td>5.95B</td>
                     </tr>
                     <tr>
-                        <th>Transformers</th>
+                        <th class="fn"><a href="franchises/tform.htm   ">Transformers</a></th>
                         <td>Transformers (2007)</td>
                         <td>Bumblebee (2018)</td>
                         <td>4.85B</td>
@@ -417,6 +429,7 @@
                     <h4 style="color:white">Contact Us</h4>
                     <p style="color:white">Email: FlixFeast@gmail.com</p>
                     <p style="color:white">Phone: +383 44 123 321</p>
+                    <address>Address: Everywhere you are</address>
                 </div>
                 <div class="col-sm-4">
                     <h4 style="color:white">About Us</h4>
@@ -440,8 +453,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <p style="color:white; margin-bottom: 20px;">Copyright 2021 Your Company. All rights reserved.
-                        </p>
+                        <abbr><i>Copyright 2021 Your Company. All rights <span class="cpright"> reserved. </span></i></abbr>
                     </div>
                 </div>
             </div>

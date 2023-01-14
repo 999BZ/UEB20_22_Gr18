@@ -68,6 +68,10 @@ img {
   display: flex;
 }
 
+a > p {
+word-wrap: break-word;
+}
+
 p {
   color: black;
   text-align: center;
@@ -582,6 +586,11 @@ div > h3 {
   height: 230px;
 }
 
+
+.images:hover, .imagesf:hover {
+    box-shadow: 5px 10px 18px rgb(0, 0, 0, 0.4);
+}
+
 div > a #hovertext {
   text-decoration: none;
 }
@@ -643,12 +652,16 @@ a.hovertext {
   outline: none;
 }
 
-.heart-button:before {
+.heart-button::before {
   content: "\2665";
   font-size: 30px;
   color: #fff;
 }
 
-.heart-button.clicked:before {
+.heart-button.clicked::before {
   color: #ff0000;
+}
+
+.cpright::after{
+  content: " ©";
 }
