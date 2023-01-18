@@ -11,7 +11,8 @@
       transform: scale(1.1);
     }
 
-    .home-text03, .potc {
+    .home-text03,
+    .potc {
       background-color: white;
       color: #251749;
       border-radius: 20px;
@@ -43,20 +44,20 @@
   <br>
 
   <ul class="navbar-nav flex-row d-none d-md-flex">
-      <div class="home-left">
-          <div class="home-links1">
-              <a href="dcu.htm"><span class="franch dcu">DCU</span></a>
-              <a href="mcu.htm"><span class="franch mcu">MCU</span></a>
-              <a href="starwars.htm"><span class="franch starwars">STAR WARS</span></a>
-              <a href="x-men.htm"><span class="franch x-men">X-MEN</span></a>
-              <a href="wizards.htm"><span class="franch wizards">WIZARDING WORLD</span></a>
-              <a href="tform.htm"><span class="franch tform">TRANSFORMERS</span></a>
-              <a href="mi6.htm"><span class="franch mi6">MISSION: IMPOSSIBLE</span></a>
-              <a href="potc.htm"><span class="franch potc">PIRATES OF THE CARIBBEAN</span></a>
-              <a href="f&f.htm"><span class="franch f&f">F & F</span></a>
-              <a href="lotr.htm"><span class="franch lotr">LORD OF THE RINGS</span></a>
-          </div>
+    <div class="home-left">
+      <div class="home-links1">
+        <a href="dcu.htm"><span class="franch dcu">DCU</span></a>
+        <a href="mcu.htm"><span class="franch mcu">MCU</span></a>
+        <a href="starwars.htm"><span class="franch starwars">STAR WARS</span></a>
+        <a href="x-men.htm"><span class="franch x-men">X-MEN</span></a>
+        <a href="wizards.htm"><span class="franch wizards">WIZARDING WORLD</span></a>
+        <a href="tform.htm"><span class="franch tform">TRANSFORMERS</span></a>
+        <a href="mi6.htm"><span class="franch mi6">MISSION: IMPOSSIBLE</span></a>
+        <a href="potc.htm"><span class="franch potc">PIRATES OF THE CARIBBEAN</span></a>
+        <a href="f&f.htm"><span class="franch f&f">F & F</span></a>
+        <a href="lotr.htm"><span class="franch lotr">LORD OF THE RINGS</span></a>
       </div>
+    </div>
   </ul>
 
   <br><br>
@@ -103,45 +104,16 @@
       </a>
     </div>
   </div>
-  <footer>
-		<div class="container">
-			<div class="row" style="padding-top: 3%;">
-				<div class="col-sm-4">
-					<h4 style="color:white">Contact Us</h4>
-					<p style="color:white">Email: FlixFeast@ecmekohen.com</p>
-					<p style="color:white">Phone: +383 44 123 321</p>
-				</div>
-				<div class="col-sm-4">
-					<h4 style="color:white">About Us</h4>
-					<p style="color:white">Learn more about our company and our team.</p>
-					<ul class="list-unstyled">
-						<li><a href="#" style="color:white">About Us</a></li>
-						<li><a href="#" style="color:white">Meet the Team</a></li>
-						<li><a href="#" style="color:white">Careers</a></li>
-					</ul>
-				</div>
-				<div class="col-sm-4">
-					<h4 style="color:white">Follow Us</h4>
-					<p style="color:white">Stay up to date with our latest news and updates</p>
-					<ul class="list-unstyled">
-						<li><a href="#" style="color:white">Twitter</a></li>
-						<li><a href="#" style="color:white">Facebook</a></li>
-						<li><a href="#" style="color:white">Instagram</a></li>
-						<li><a href="#" style="color:white">LinkedIn</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div class="copyright">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-12">
-						<p>Copyright 2021 Your Company. All rights reserved.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
+  <div id="footer"></div>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+    </script>
+  <script>
+    $(function () {
+      $("#header").load("header.html");
+      $("#footer").load("footer.html");
+    });
+  </script>
 </body>
 
 </html>

@@ -15,7 +15,8 @@
 			color: #fff;
 		}
 
-		.home-text05,.dropdown-itemLast {
+		.home-text05,
+		.dropdown-itemLast {
 			background-color: white;
 			color: #251749;
 			border-radius: 20px;
@@ -24,42 +25,9 @@
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-muted"
-		style="height: 70px; background-color: rgb(0, 0, 0, 0.6);">
-		<div class="container-fluid justify-content-between" style="height: 25%;">
-			<div class="d-flex">
-				<a class="navbar-brand me-2 mb-1 d-flex align-items-center" href="home.html">
-					<img src="assets/img/logo.png" height="40" alt="MDB Logo" loading="lazy"
-						style="margin-top: 2px; border: 0;" />
-				</a>
-			</div>
-			<ul class="navbar-nav flex-row d-none d-md-flex">
-				<div class="home-left">
-					<div class="home-links1">
-						<a href="movies.html"><span class="home-text03 Link">Movies</span></a>
-						<a href="tv_shows.html"><span class="home-text04 Link">TV-Shows</span></a>
-						<a href="imdb.html"><span class="home-text05 Link">IMDb</span></a>
-					</div>
-				</div>
-			</ul>
-		</div>
-	</nav>
-	<div class="collapse dropdownall" id="navbarToggleExternalContent">
-		<ul id = "dropdown-menu">
-			<li><a href="movies.html"><span class="dropdown-itemFirst">Movies</span></a></li>
-			<li><a href="tv_shows.html"><span class="dropdown-itemMiddle">TV-Shows</span></a></li>
-			<li><a href="imdb.html"><span class="dropdown-itemLast">IMDb</span></a></li>
-		</ul>
-	  </div>
-	  <nav class="navbar dropdownall navbar-dark">
-		<div class="container-fluid">
-		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		  </button>
-		</div>
-	  </nav>
+	<div id="header"></div>
 
-	<ul class="nav nav-tabs navi123" id="myTab" role="tablist" style="justify-content: center;" >
+	<ul class="nav nav-tabs navi123" id="myTab" role="tablist" style="justify-content: center;">
 		<li class="nav-item" role="presentation">
 			<button class="nav-link active" id="top10-tab" data-bs-toggle="tab" data-bs-target="#top10-tab-pane"
 				type="button" role="tab" aria-controls="top10-tab-pane" aria-selected="true"
@@ -1099,43 +1067,16 @@
 			</div>
 		</div>
 	</ol>
-	<footer>
-		<div class="container">
-			<div class="row" style="padding-top: 3%;">
-				<div class="col-sm-4">
-					<h4 style="color:white">Contact Us</h4>
-					<p style="color:white">Email: FlixFeast@gmail.com</p>
-					<p style="color:white">Phone: +383 44 123 321</p>
-					<address>Address: Everywhere</address>
-				</div>
-				<div class="col-sm-4">
-					<h4 style="color:white">About Us</h4>
-
-					<p style="color:white">FlixFeast is a movie streaming website with a huge selection
-						of popular films and TV shows. Sign up for a free trial and start watching today!</p>
-				</div>
-				<div class="col-sm-4">
-					<h4 style="color:white">Follow Us</h4>
-					<p style="color:white">Stay up to date with our latest news and updates</p>
-					<ul class="list-unstyled">
-						<li><a href="#" style="color:white">Twitter</a></li>
-						<li><a href="#" style="color:white">Facebook</a></li>
-						<li><a href="#" style="color:white">Instagram</a></li>
-						<li><a href="#" style="color:white">LinkedIn</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div class="copyright">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-12">
-						<abbr><i>Copyright 2021 Your Company. All rights <span class="cpright"> reserved. </span></i></abbr>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
+	<div id="footer"></div>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"
+		integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+		</script>
+	<script>
+		$(function () {
+			$("#header").load("header.html");
+			$("#footer").load("footer.html");
+		});
+	</script>
 
 </body>
 
