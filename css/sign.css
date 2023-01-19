@@ -41,9 +41,13 @@
   justify-content: space-around;
 }
 
+*, div > p, p > a, div > a {
+  color: white;
+}
+
 .forgot {
   text-decoration: none;
-  color: rgb(2, 27, 29);
+  color: white;
 }
 
 .forgot:hover {
@@ -68,12 +72,12 @@ input[type="checkbox"] {
 }
 
 .sign-up {
-  color: black;
+  color: white;
   margin: 0 10px;
 }
 
 .sign-up:hover {
-  color: rgb(2, 27, 29);
+  color: rgb(0, 0, 0, 1);
 }
 
 .or-options {

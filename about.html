@@ -337,15 +337,41 @@
             {id: 1, name: "Avatar", year: 2009},
             {id: 2, name: "Avengers: Engame", year: 2019},
             {id: 3, name: "Star Wars: The Force Awakens", year: 2013},
-            {id: 3, name: "Avengers: Infinity War", year: 2018},
-            {id: 3, name: "Spider-Man: No Way Home", year: 2021},
-            {id: 3, name: "Jurassic World", year: 2015},
+            {id: 4, name: "Avengers: Infinity War", year: 2018},
+            {id: 5, name: "Spider-Man: No Way Home", year: 2021},
+            {id: 6, name: "Jurassic World", year: 2015},
         ];
         var newFilms = films.filter(function(films){
-            return films.year >2015;
+            return films.year > 2015;
         });
         console.log("Te gjithe filmat: ", films);
         console.log("Filmat e rinj: ", newFilms);
+
+        const film1 = {id: 1, name: "Avatar", year: 2009};
+        const film2 = {id: 2, name: "Avengers: Engame", year: 2019};
+
+        const film3 = new Object();
+        film3.id = 3;
+        film3.name = "Star Wars: The Force Awakens";
+        film3.year = 2013;
+
+        const film4 = new Object();
+        film4.id = 4;
+        film4.name = "Avengers: Infinity War";
+        film4.year = 2018;
+
+        const film5 = {};
+        film5.id = 5;
+        film5.name = "Spider-Man: No Way Home";
+        film5.year = 2021;
+
+        const film6 = {};
+        film6.id = 6;
+        film6.name = "Jurassic World";
+        film6.year = 2015;
+
+        var films2 = [film1, film2, film3, film4, film5, film6,];
+        console.log("Filmat: ", films2);
         //until here
 
 
