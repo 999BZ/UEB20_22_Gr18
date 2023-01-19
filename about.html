@@ -186,7 +186,7 @@
 
     <div id="mydiv" style="top:50;left:50%;">
         <div id="mydivheader">Move from here</div>
-        <p id="datasot" style="color:white">Date:</p>
+        <p id="datasot" style="color:white;">Date:</p>
     </div>
 
     <div class="aboutus">
@@ -437,24 +437,6 @@
             window.requestAnimationFrame(animate);
         }
         window.requestAnimationFrame(animate);
-        
-       
-        $("#safePar").hide();
-        $("#safeFLIX").click(function () {
-            
-            if($("#safePar").is(':visible')){
-                $("#safeFLIX").css("color", "black");
-                $("#safePar").fadeOut(2000).slideUp(3000);
-            }else{
-                $("#safeFLIX").css("color", "red");
-                $("#safePar").show();
-            }
-        });
-        
-        $("#mydiv").animate({
-            height: '1100px',
-            width: '1100px'
-        }, 3000);
     </script>
 </body>
 
