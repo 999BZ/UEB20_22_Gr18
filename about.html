@@ -190,7 +190,7 @@
     </div>
 
     <div class="aboutus">
-        <br> <span style="font-size: 16px;" id = "safeFLIX"><strong>Is FlixFeast safe?</strong></span><br><p>
+        <br> <span style="font-size: 16px;" id = "safeFLIX"><strong>Is FlixFeast safe?</strong></span><br><p id="safePar">
             Although FlixFeast is newly-created, please rest assured about its security. This is an ad-free website that
             doesn’t ask for your information to sign up or download any apps, extensions and such to stream movies.
             Hence FlixFeast keeps you from common Internet risks such as data loss, identity theft, etc, which allows
@@ -371,11 +371,20 @@
 
             window.requestAnimationFrame(animate);
         }
-
         window.requestAnimationFrame(animate);
+        
+       
+        $("#safePar").hide();
         $("#safeFLIX").click(function () {
-            $("#safeFLIX").css("color", "red");
-        });
+            
+            if($("#safePar").is(':visible')){
+                $("#safeFLIX").css("color", "black");
+                $("#safePar").hide();
+            }else{
+                $("#safeFLIX").css("color", "red");
+                $("#safePar").show();
+            }
+});
     </script>
 </body>
 
