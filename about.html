@@ -138,11 +138,10 @@
     <div class="aboutus">
         <ol><strong>Here you can watch </strong>
             <li><b>Movies: </b></li>
-            <ul style="list-style-type: disc;">
+            <ul style="list-style-type: disc;" id="aboutUL">
                 <li>Most Watched</li>
                 <li>Movie of top franchises</li>
                 <li>Top NETFLIX</li>
-                <li>Animated</li>
             </ul>
             <li><b>TV-Shows: </b></li>
             <ul style="list-style-type: square;">
@@ -205,13 +204,16 @@
             - Completely free!</p>
 
         <p>Give us a rating, if you have time!</p>
+        <p id="addrating"></p>
+        
     </div>
 
     <form oninput="x.value=parseInt(a.value)+parseInt(b.value)" style="margin-left: 7%;" autocomplete="on">
-        <input type="range" id="a" value="50">
-        +<input type="number" id="b" value="25" max="100">
-        =<output name="x" for="a b"></output>
+        <input type="range" id="a" value="1" min = "0" max="5">
+        +<input type="number" id="b" value="1" min="0" max="5">
+        =<output name="x" for="a b" id="shumatotale"></output>
     </form>
+    <button id="addRbtn" style="margin-left:7%; background-color: white; border: 0px; border-radius: 10px; padding:10px;" >Add Rating</button>
     <div>
         <canvas id="myCanvas" width="200" height="100"
             style="border:1px solid rgb(0, 0, 0, 0.9); align-self: center; background-color: rgb(0, 0, 0, 0.4);">No
