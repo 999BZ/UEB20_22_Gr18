@@ -118,7 +118,7 @@ nav {
 }
 
 body {
-  background: rgb(0, 0, 255);
+  /* background: rgb(0, 0, 255);
   background: -moz-linear-gradient(
     90deg,
     rgba(0, 0, 255, 1) 0%,
@@ -134,13 +134,13 @@ body {
     rgba(0, 0, 255, 1) 0%,
     rgba(255, 255, 255, 1) 100%
   );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0000ff",endColorstr="#ffffff",GradientType=1);
-  /* background-image: radial-gradient(
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0000ff",endColorstr="#ffffff",GradientType=1); */
+  background-image: radial-gradient(
     circle,
     rgb(16, 16, 96),
     cyan,
     rgb(31, 31, 104)
-  ); */
+  );
 
   background-position-y: center;
   /*background: rgb(151, 35, 86);
