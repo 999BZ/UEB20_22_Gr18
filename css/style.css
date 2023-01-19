@@ -118,12 +118,30 @@ nav {
 }
 
 body {
-  background-image: radial-gradient(
+  background: rgb(0, 0, 255);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(0, 0, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(0, 0, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0000ff",endColorstr="#ffffff",GradientType=1);
+  /* background-image: radial-gradient(
     circle,
     rgb(16, 16, 96),
     cyan,
     rgb(31, 31, 104)
-  );
+  ); */
+
   background-position-y: center;
   /*background: rgb(151, 35, 86);
   background: -moz-radial-gradient(
@@ -668,8 +686,7 @@ a.hovertext {
   transform: scale(1.22);
 }
 
-
-.nav-link:active{
+.nav-link:active {
   height: 42px;
   line-height: 42px;
   display: block;
@@ -682,5 +699,4 @@ a.hovertext {
   text-decoration: none;
   color: white;
   transition: background 0.25s ease-in-out;
-
 }
