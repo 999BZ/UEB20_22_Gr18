@@ -293,22 +293,17 @@ p {
   margin-bottom: 0px;
 }
 
-
 @font-face {
   font-family: pacificofont;
   src: url("../assets/fonts/Pacifico-Regular.ttf");
 }
 div > h3 {
   margin: 30px 0 20px 0;
-  
-
 }
 
-div > h3 >span {
+div > h3 > span {
   font-family: pacificofont, cursive;
-
 }
-
 
 /*########################## HomeScreen ##########################*/
 .home-container {
@@ -538,7 +533,6 @@ div > h3 >span {
   align-self: stretch;
   font-style: normal;
   text-align: center;
-  font-weight: 700;
   line-height: 55px;
 }
 .home-text08 {
@@ -581,7 +575,6 @@ div > h3 >span {
 .home-text09 {
   font-size: 18px;
   font-style: normal;
-  font-weight: 600;
 }
 .home-banners {
   width: 100%;
