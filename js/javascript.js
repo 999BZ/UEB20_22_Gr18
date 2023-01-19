@@ -39,3 +39,18 @@ $("#addRbtn").click(function () {
 });
 
 $("#aboutUL").add("<li>Animated</li>").appendTo("#aboutUL");
+
+
+
+//############################################################################################################
+//MaxValue, NaN, toExponential, toString
+document.getElementById("maxValue").innerHTML = "Max Number: " + Number.MAX_VALUE;
+
+document.getElementById("NaN").innerHTML = "Not a number: " + NaN;
+
+let num = 1450;
+let n = num.toExponential();
+document.getElementById("exponent").innerHTML = "Exponencial: " + n;
+
+let num2 = 4578;
+document.getElementById("toString").innerHTML = "Number to String: " + num2.toString();
