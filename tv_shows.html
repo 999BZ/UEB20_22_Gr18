@@ -16,7 +16,30 @@
             color: #251749;
             border-radius: 20px;
         }
+        
+
+
+        
+
+       
     </style>
+
+  <script>
+ 
+function toUpperCase(s) {
+  let result = "";
+  for (let i = 0; i < s.length; i++) {
+    if (s[i] === s[i].toLowerCase()) {
+      result += s[i].toUpperCase();
+    } else {
+      result += s[i];
+    }
+  }
+  return result;
+}
+  </script>
+
+
 </head>
 
 <body>
@@ -24,32 +47,32 @@
 
     <ul class="nav nav-tabs" id="myTab" role="tablist" style="justify-content: center;">
         <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="Action-tab" data-bs-toggle="tab" data-bs-target="#Action-tab-pane"
+            <button class="nav-link active ripple"  id="Action-tab" data-bs-toggle="tab" data-bs-target="#Action-tab-pane"
                 type="button" role="tab" aria-controls="Action-tab-pane" aria-selected="true"
                 style="color: black; border-radius: 15px; margin: 8px;">Action</button>
         </li>
         <li class="nav-item" role="presentation">
-            <button class="nav-link" id="Adventure-tab" data-bs-toggle="tab" data-bs-target="#Adventure-tab-pane"
+            <button class="nav-link ripple"  id="Adventure-tab" data-bs-toggle="tab" data-bs-target="#Adventure-tab-pane"
                 type="button" role="tab" aria-controls="Adventure-tab-pane" aria-selected="false"
                 style="color: black; border-radius: 15px; margin: 8px;">Adventure</button>
         </li>
         <li class="nav-item" role="presentation">
-            <button class="nav-link" id="Animated-tab" data-bs-toggle="tab" data-bs-target="#Animated-tab-pane"
+            <button class="nav-link ripple"  id="Animated-tab"  data-bs-toggle="tab" data-bs-target="#Animated-tab-pane"
                 type="button" role="tab" aria-controls="Animated-tab-pane" aria-selected="false"
                 style="color: black; border-radius: 15px; margin: 8px;">Animated</button>
         </li>
         <li class="nav-item" role="presentation">
-            <button class="nav-link" id="Comedy-tab" data-bs-toggle="tab" data-bs-target="#Comedy-tab-pane"
+            <button class="nav-link ripple"  id="Comedy-tab" data-bs-toggle="tab" data-bs-target="#Comedy-tab-pane"
                 type="button" role="tab" aria-controls="Comedy-tab-pane" aria-selected="false"
                 style="color: black; border-radius: 15px; margin: 8px;">Comedy</button>
         </li>
         <li class="nav-item" role="presentation">
-            <button class="nav-link" id="Horror-tab" data-bs-toggle="tab" data-bs-target="#Horror-tab-pane"
+            <button class="nav-link ripple"  id="Horror-tab" data-bs-toggle="tab" data-bs-target="#Horror-tab-pane"
                 type="button" role="tab" aria-controls="Horror-tab-pane" aria-selected="false"
                 style="color: black; border-radius: 15px; margin: 8px;">Horror</button>
         </li>
         <li class="nav-item" role="presentation">
-            <button class="nav-link" id="Reality-TV-tab" data-bs-toggle="tab" data-bs-target="#Reality-TV-tab-pane"
+            <button class="nav-link ripple" id="Reality-TV-tab" data-bs-toggle="tab" data-bs-target="#Reality-TV-tab-pane"
                 type="button" role="tab" aria-controls="Reality-TV-tab-pane" aria-selected="false"
                 style="color: black; border-radius: 15px; margin: 8px;">Reality-TV</button>
         </li>

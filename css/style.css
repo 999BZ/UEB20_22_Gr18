@@ -667,3 +667,20 @@ a.hovertext {
 .mail-logo:hover {
   transform: scale(1.22);
 }
+
+
+.nav-link:active{
+  height: 42px;
+  line-height: 42px;
+  display: block;
+  margin: 2em;
+  padding: 0 2em;
+  border-radius: 2px;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+  font-size: 1.4em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  transition: background 0.25s ease-in-out;
+
+}
