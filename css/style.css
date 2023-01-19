@@ -293,9 +293,19 @@ p {
   margin-bottom: 0px;
 }
 
+
+
 div > h3 {
   margin: 30px 0 20px 0;
+  
+
 }
+
+div > h3 >span {
+  font-family: 'Pacifico', cursive;
+
+}
+
 
 /*########################## HomeScreen ##########################*/
 .home-container {
