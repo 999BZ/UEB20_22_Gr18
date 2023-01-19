@@ -277,10 +277,74 @@
         </script>
     <script type="text/javascript" src="js/javascript.js"></script>
     <script>
+        //############################################################################################################
+        //Header and Footer call 
         $(function () {
             $("#header").load("header.html");
             $("#footer").load("footer.html");
         });
+        //until here
+
+
+        //############################################################################################################
+        //Callback function
+        function myDisplayer(some) {
+            document.getElementById("sum").innerHTML = some;
+        }
+        function myCalculator(num1, num2) {
+            let sum = num1 + num2;
+            myDisplayer(sum);
+        }
+        myCalculator(18, 8);
+        //until here
+
+
+        //############################################################################################################
+        //Timeout function
+        const myTimeout = setTimeout(viewTime, 10000);
+        function viewTime() {
+            document.getElementById("viewTime").innerHTML = "You have been here for more than 10 seconds.";
+        }
+        //until here
+
+
+        //############################################################################################################
+        //filter, map, reduce
+        const vargu50 = [];
+        for (var i = 1; i <= 50; i++) {
+            vargu50.push(i);
+        }
+        const varguCift = vargu50.filter(a => a % 2 === 0);
+        const varguTek = vargu50.filter(a => a % 2 === 1);
+        console.log(varguCift);
+        console.log(varguTek);
+        const varguCift2 = vargu50.map(a => a % 2 === 0);
+        console.log(varguCift2);
+        const varguTek2 = vargu50.filter(a => a % 2 === 1).map(a => a % 2 === 1);
+        console.log(varguTek2);
+        const shuma = varguCift.reduce((a, b) => a + b);
+        console.log(shuma);
+        //until here
+
+
+        //############################################################################################################
+        //Object
+        var films = [
+            {id: 1, name: "Avatar", year: 2009},
+            {id: 2, name: "Avengers: Engame", year: 2019},
+            {id: 3, name: "Star Wars: The Force Awakens", year: 2013},
+            {id: 3, name: "Avengers: Infinity War", year: 2018},
+            {id: 3, name: "Spider-Man: No Way Home", year: 2021},
+            {id: 3, name: "Jurassic World", year: 2015},
+        ];
+        var newFilms = films.filter(function(films){
+            return films.year >2015;
+        });
+        console.log("Te gjithe filmat: ", films);
+        console.log("Filmat e rinj: ", newFilms);
+        //until here
+
+        
 
         dragElement(document.getElementById("mydiv"));
 
