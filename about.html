@@ -1,6 +1,4 @@
-<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,85 +8,69 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <link rel="shortcut icon" href="assets/img/logotab.png">
-
     <style>
-        html,
-        body {
-
-            margin: 0;
-
-            padding: 0;
-        }
-
-        .background {
-
-            position:
-                absolute;
-
-            display:
-                block;
-
-            top: 0;
-
-            left: 0;
-
-            z-index: 0;
-        }
-
-        video {
+        video{
             width: 100%;
             opacity: 0.8;
         }
-
-        * {
+        *.col-sm-4, div.aboutus p {
             text-align: left;
             text-decoration: none;
             color: black;
         }
-
         a {
             text-decoration: none;
         }
-
-        p,
-        ol {
+        div.aboutus, ol {
             opacity: 0.8;
             text-align: left;
             margin: 2% 7%;
         }
-
-        p.foot {
+        ol{
             opacity: 1;
             margin: 0;
+            color: black;
         }
-
         .home-hero {
             height: 100%;
             padding-top: 0;
         }
-
         .home-container {
             overflow-x: visible;
         }
-
+        /* p, h4, address, a, i, span{
+            color: white;
+        } */
+        .col-sm-4 {
+            text-align: center;
+        }
         #mydiv {
             position: absolute;
             z-index: 9;
-            background-color: #f1f1f1;
-            border: 1px solid #d3d3d3;
+            background-color: rgb(0, 0, 0, 0.3);
+            border: 1px solid rgb(0, 0, 0, 0.9);
             text-align: center;
+            left: 25%;
+            top: 397%;
         }
 
         #mydivheader {
             padding: 10px;
             cursor: move;
             z-index: 10;
-            background-color: #2196F3;
+            background-color: rgb(0, 0, 0, 0.8);
             color: #fff;
         }
+        audio {
+            color: rgb(0, 0, 0, 0.9);
+            margin: 0 2% 1% 0;
+        }
+        /* audio::-webkit-media-controls-panel {
+            background-color: rgb(0, 0, 0, 0.5);
+            color: rgb(0, 0, 0, 0.1);
+        } */
     </style>
 </head>
-
 <body>
     <div id="header"></div>
     <!-- <nav class="navbar navbar-expand-lg navbar-light bg-muted"
@@ -110,111 +92,118 @@
             </ul>
         </div>
     </nav> -->
-    <video loop="loop" muted="muted" autoplay="autoplay" src="assets/videos/FLIXFeast.mp4">
+    <video  loop="loop" muted="muted" autoplay="autoplay" src="assets/videos/FLIXFeast.mp4">
         <source type="video/mp4">
     </video>
+    <div class="aboutus">
+<p><span style="font-size: 16px;"><strong>Watch Movies Online For Free</strong></span><br>
+FlixFeast is the best website that allows users to watch HD movies and TV shows online free with no registration required. The new HD movies and shows are updated daily on various genres such as romance, action, adventure, comedy, etc. FlixFeast is likely to have all the movies you are looking for on the site, If not you can simply request it and it will be available for you to watch shortly.</p>
 
-    <p><span style="font-size: 16px;"><strong>Watch Movies Online For Free</strong></span><br>
-        FlixFeast is the best website that allows users to watch HD movies and TV shows online free with no registration
-        required. The new HD movies and shows are updated daily on various genres such as romance, action, adventure,
-        comedy, etc. FlixFeast is likely to have all the movies you are looking for on the site, If not you can simply
-        request it and it will be available for you to watch shortly.</p>
-
-    <p><br> <span style="font-size: 16px;"><strong>What is FlixFeast?</strong></span><br>
-        FlixFeast is your go-to website to watch free HD movies and TV shows! Here you can download or watch thousands
-        of movies and series online seamlessly. FlixFeast also provides the ad-free feature as well as private source
-        links for their users safety.&nbsp;<br>
-        We want to make movies and TV shows available for everyone regardless of their financial situation. Although
-        this is a long journey, we strongly believe we can become the #1 Netflix alternative shortly with your support.
-    </p>
+        <p><br> <span style="font-size: 16px;"><strong>What is FlixFeast?</strong></span><br>
+FlixFeast is your go-to website to watch free HD movies and TV shows! Here you can download or watch thousands of movies and series online seamlessly. FlixFeast also provides the ad-free feature as well as private source links for their users safety.&nbsp;<br>
+We want to make movies and TV shows available for everyone regardless of their financial situation. Although this is a long journey, we strongly believe we can become the #1 Netflix alternative shortly with your support.</p>
 
     <p><br> <span style="font-size: 16px;"><strong>Is It legal to Use FlixFeast?</strong></span><br>
-        If you can get access to FlixFeast website, it is legal in your area. According to copyright attorneys,
-        streaming movies and TV shows online is not illegal but downloading and sharing pirated files are. Therefore,
-        you should protect yourself by using a reliable VPN to download files anonymously.</p>
+If you can get access to FlixFeast website, it is legal in your area. According to copyright attorneys, streaming movies and TV shows online is not illegal but downloading and sharing pirated files are. Therefore, you should protect yourself by using a reliable VPN to download files anonymously.</p>
+    </div>
 
-    <video loop="loop" muted="muted" width="50%" autoplay="autoplay" src="assets/videos/Video2.mp4">
-        <source type="video/mp4">
-    </video>
+    
+<video  loop="loop" muted="muted" width="50%" autoplay="autoplay" src="assets/videos/Video2.mp4">
+    <source type="video/mp4">
+</video>
 
+<div class="aboutus">
     <ol><strong>Here you can watch </strong>
-        <li><b>Movies: </b></li>
-        <ul style="list-style-type: disc;">
-            <li>Most Watched</li>
-            <li>Movie of top franchises</li>
-            <li>Top NETFLIX</li>
-            <li>Animated</li>
-        </ul>
-        <li><b>TV-Shows: </b></li>
-        <ul style="list-style-type: square;">
-            <li>Action</li>
-            <li>Adventure</li>
-            <li>Animated</li>
-            <li>Comedy</li>
-            <li>Horror</li>
-            <li>Reality TV</li>
-        </ul>
-        <li><b>Top IMDb</b></li>
-        <ul style="list-style-type: circle;">
-            <li>Movies and TV-Shows that made history</li>
-        </ul>
-    </ol>
+  <li><b>Movies: </b></li>
+  <ul style="list-style-type: disc;">
+      <li>Most Watched</li>
+      <li>Movie of top franchises</li>
+      <li>Top NETFLIX</li>
+      <li>Animated</li>
+    </ul>
+  <li><b>TV-Shows: </b></li>
+    <ul style="list-style-type: square;">
+      <li>Action</li>
+      <li>Adventure</li>
+      <li>Animated</li>
+      <li>Comedy</li>
+      <li>Horror</li>
+      <li>Reality TV</li>
+    </ul>
+  <li><b>Top IMDb</b></li>
+  <ul style="list-style-type: circle;">
+      <li>Movies and TV-Shows that made history</li>
+    </ul>
+</ol>
+</div>
+    
+<div class="aboutus">
+<p>Intro from: "20th Century Fox" and "Warner Bros." studios</p>
+<div style="text-align: left;">
+    <audio controls>
+        <source src="assets/videos/20th.mp3" type="audio/mpeg">
+    </audio>
+    <audio controls>
+        <source src="assets/videos/WB.mp3" type="audio/mpeg">
+    </audio>
+</div>
 
-    <p>Intro from: "20th Century Fox" and "Warner Bros." studios</p>
-    <div style="text-align: left; margin-left: 7%;">
-        <audio controls>
-            <source src="assets/videos/20th.mp3" type="audio/mpeg">
-        </audio>
-        <audio controls>
-            <source src="assets/videos/WB.mp3" type="audio/mpeg">
-        </audio>
-    </div>
+<p>Which one do you like more? </p>
+</div>
 
-    <p>Which one do you like more? </p>
 
-    <form style="margin-left: 7%;">
-        <keygen name="rsaPublicKey" keytype="RSA">
-        <input list="browsers" name="browser" id="browser">
-        <datalist id="browsers">
-            <option value="20th Century Fox">
-            <option value="Warner Bros.">
-        </datalist>
-    </form>
+<form style="margin-left: 7%;">
+    <keygen name="rsaPublicKey" keytype="RSA">
+    <input list="browsers" name="browser" id="browser">
+<datalist id="browsers">
+    <option value="20th Century Fox">
+    <option value="Warner Bros.">
+</datalist>
+</form>
 
-    <div id="mydiv">
-        <div id="mydivheader">Move from here</div>
-        <p>This Div</p>
-        <p>is Draggable</p>
-    </div>
+<div id="mydiv">
+  <div id="mydivheader">Move from here</div>
+  <p>This Div is Draggable</p>
+</div>
 
+<div class="aboutus">
     <p><br> <span style="font-size: 16px;"><strong>Is FlixFeast safe?</strong></span><br>
-        Although FlixFeast is newly-created, please rest assured about its security. This is an ad-free website that
-        doesn’t ask for your information to sign up or download any apps, extensions and such to stream movies. Hence
-        FlixFeast keeps you from common Internet risks such as data loss, identity theft, etc, which allows you to enjoy
-        your movie night risk-free.<br>
-        In addition to the above features, we also offer:<br>
-        - Clean and optimized UX &amp; UI<br>
-        - Mobile friendly, Chromecast and Android supported<br>
-        - Best customer service – able to request titles<br>
-        - Adjustable. HD Resolution (720p)<br>
-        - No ads, pop-ups, commercials<br>
-        - No registration<br>
-        - Completely free!</p>
+Although FlixFeast is newly-created, please rest assured about its security. This is an ad-free website that doesn’t ask for your information to sign up or download any apps, extensions and such to stream movies. Hence FlixFeast keeps you from common Internet risks such as data loss, identity theft, etc, which allows you to enjoy your movie night risk-free.<br>
+In addition to the above features, we also offer:<br>
+- Clean and optimized UX &amp; UI<br>
+- Mobile friendly, Chromecast and Android supported<br>
+- Best customer service – able to request titles<br>
+- Adjustable. HD Resolution (720p)<br>
+- No ads, pop-ups, commercials<br>
+- No registration<br>
+- Completely free!</p>
 
-    <p>Give us a rating, if you have time!</p>
-    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)" style="margin-left: 7%;" autocomplete="on">
-        <input type="range" id="a" value="50">
-        +<input type="number" id="b" value="25" max="100">
-        =<output name="x" for="a b"></output>
-    </form>
-    <div id="wrapper" style="  display: grid;
-    justify-items: center;
-    align-items: center;">
-        <canvas id="canvas" />
-    </div>
-    <br><br><br>
-    <div id="footer"></div>
-    <!-- <footer id="footer">
+<p>Give us a rating, if you have time!</p>
+</div>
+
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)" style="margin-left: 7%;" autocomplete="on">
+<input type="range" id="a" value="50">
++<input type="number" id="b" value="25" max="100">
+=<output name="x" for="a b"></output>
+</form>
+<div>
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid rgb(0, 0, 0, 0.9); align-self: center; background-color: rgb(0, 0, 0, 0.4);">No canvas</canvas>
+<br>
+<svg width="100" height="100">
+  <circle cx="50" cy="50" r="30" stroke="rgb(0, 0, 0, 0.9)" stroke-width="1" fill="rgb(0, 0, 0, 0.4)" />
+</svg>
+</div>
+
+<div>
+<p>Click "Test" to get every number between that number and 100:</p>
+<p><input type="number" id="ageToCheck" value="30"></p>
+<button onclick="myFunction()">Test</button>
+<p id="array"></p>
+</div>
+
+<br><br><br>
+<div id="footer"></div>
+<!-- <footer id="footer">
     <div class="container">
         <div class="row" style="padding-top: 3%;">
             <div class="col-sm-4">
@@ -255,7 +244,8 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
-        </script>
+    </script>
+    <script type="text/javascript" src="js/javascript.js"></script>
     <script>
         $(function () {
             $("#header").load("header.html");
@@ -265,101 +255,56 @@
         dragElement(document.getElementById("mydiv"));
 
         function dragElement(elmnt) {
-            var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-            if (document.getElementById(elmnt.id + "header")) {
-                // if present, the header is where you move the DIV from:
-                document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
-            } else {
-                // otherwise, move the DIV from anywhere inside the DIV:
-                elmnt.onmousedown = dragMouseDown;
-            }
-
-            function dragMouseDown(e) {
-                e = e || window.event;
-                e.preventDefault();
-                // get the mouse cursor position at startup:
-                pos3 = e.clientX;
-                pos4 = e.clientY;
-                document.onmouseup = closeDragElement;
-                // call a function whenever the cursor moves:
-                document.onmousemove = elementDrag;
-            }
-
-            function elementDrag(e) {
-                e = e || window.event;
-                e.preventDefault();
-                // calculate the new cursor position:
-                pos1 = pos3 - e.clientX;
-                pos2 = pos4 - e.clientY;
-                pos3 = e.clientX;
-                pos4 = e.clientY;
-                // set the element's new position:
-                elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
-                elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
-            }
-
-            function closeDragElement() {
-                // stop moving when mouse button is released:
-                document.onmouseup = null;
-                document.onmousemove = null;
-            }
-        }
-        let canvas = document.getElementById("canvas");
-        canvas.width = 150;
-        canvas.height = 150;
-
-        let context = canvas.getContext("2d");
-
-        let size = 5;
-        let minSize = 5;
-        let maxSize = 30;
-        let isShrinking = false;
-
-        function computation() {
-            if (isShrinking) {
-                size -= 1;
-            } else {
-                size += 1;
-            }
-
-            if (size < minSize) {
-                isShrinking = false;
-            }
-            if (size > maxSize) {
-                isShrinking = true;
-            }
+        var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+        if (document.getElementById(elmnt.id + "header")) {
+            // if present, the header is where you move the DIV from:
+            document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+        } else {
+            // otherwise, move the DIV from anywhere inside the DIV:
+            elmnt.onmousedown = dragMouseDown;
         }
 
-        function animate() {
-            computation();
-
-            context.clearRect(0, 0, canvas.width, canvas.height);
-            context.beginPath();
-            context.arc(100, 100, size, 0, 2 * Math.PI, false);
-            context.stroke();
-
-            window.requestAnimationFrame(animate);
+        function dragMouseDown(e) {
+            e = e || window.event;
+            e.preventDefault();
+            // get the mouse cursor position at startup:
+            pos3 = e.clientX;
+            pos4 = e.clientY;
+            document.onmouseup = closeDragElement;
+            // call a function whenever the cursor moves:
+            document.onmousemove = elementDrag;
         }
 
-        window.requestAnimationFrame(animate);
+        function elementDrag(e) {
+            e = e || window.event;
+            e.preventDefault();
+            // calculate the new cursor position:
+            pos1 = pos3 - e.clientX;
+            pos2 = pos4 - e.clientY;
+            pos3 = e.clientX;
+            pos4 = e.clientY;
+            // set the element's new position:
+            elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+            elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+        }
 
-    </script>
-    <canvas class="background">
+        function closeDragElement() {
+            // stop moving when mouse button is released:
+            document.onmouseup = null;
+            document.onmousemove = null;
+        }
+        }
 
-    </canvas>
+        function checkAge(age) {
+            for (var i = document.getElementById("ageToCheck").value; i <= 100; i++) {
+                age.push(i);
+            }
+        return age;
+        }
 
-    <script src="/js/particles.js">
-        window.
-            onload
-            = function () {
-                Particles.
-                    init
-                    ({
-                        selector:
-                            '.background'
-                    });
-            };
+        function myFunction() {
+        document.getElementById("array").innerHTML = filter(checkAge);
+        }
     </script>
 </body>
-
 </html>
