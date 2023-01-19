@@ -294,7 +294,10 @@ p {
 }
 
 
-
+@font-face {
+  font-family: pacificofont;
+  src: url("../assets/fonts/Pacifico-Regular.ttf");
+}
 div > h3 {
   margin: 30px 0 20px 0;
   
@@ -302,7 +305,7 @@ div > h3 {
 }
 
 div > h3 >span {
-  font-family: 'Pacifico', cursive;
+  font-family: pacificofont, cursive;
 
 }
 
