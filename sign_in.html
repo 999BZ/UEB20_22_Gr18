@@ -11,9 +11,25 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/sign.css">
     <link rel="shortcut icon" href="assets/img/logotab.png">
+
+    <script>
+        function not_connected() {
+            alert("We have not connected to a database yet.")
+        }
+   	 </script>
+    
+
+
 </head>
 
+<script>      
+    alert("We have not connected to a database yet , you can continue as a guest for now.");
+</script>
+
 <body background="assets/img/bg.jpg" style="background-size: cover;">
+
+   
+
     <div class="main" style="margin-top: 10%;">
         <div class="asked">
             <p class="ask"><b>Have an Account?</b></p>
@@ -26,7 +42,7 @@
                 <input type="password" id="password-field" class="field input" required placeholder="Password">
             </div>
             <div class="fields">
-                <button type="submit" id="sign-in" class="field sign-up">Sign In</button>
+                <button type="submit" id="sign-in" class="field sign-up" onclick="not_connected()">Sign In</button>
             </div>
             <div class="infos">
                 <label class="checkbox">Remember Me <input type="checkbox" checked></label>
