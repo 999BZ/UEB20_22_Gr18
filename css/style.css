@@ -141,48 +141,7 @@ body {
     rgba(32, 82, 149, 1) 100%
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#205295",endColorstr="#205295",GradientType=1);
-  /* background: rgb(0, 0, 255);
-  background: -moz-linear-gradient(
-    90deg,
-    rgba(0, 0, 255, 1) 0%,
-    rgba(255, 255, 255, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    90deg,
-    rgba(0, 0, 255, 1) 0%,
-    rgba(255, 255, 255, 1) 100%
-  );
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 255, 1) 0%,
-    rgba(255, 255, 255, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0000ff",endColorstr="#ffffff",GradientType=1); */
-  /* background-image: radial-gradient(
-    circle,
-    rgb(16, 16, 96),
-    cyan,
-    rgb(31, 31, 104)
-  ); */
-
   background-position-y: center;
-  /*background: rgb(151, 35, 86);
-  background: -moz-radial-gradient(
-    circle,
-    rgba(151, 35, 86, 1) 0%,
-    rgba(0, 61, 133, 1) 100%
-  );
-  background: -webkit-radial-gradient(
-    circle,
-    rgba(151, 35, 86, 1) 0%,
-    rgba(0, 61, 133, 1) 100%
-  );
-  background: radial-gradient(
-    circle,
-    rgba(151, 35, 86, 1) 0%,
-    rgba(0, 61, 133, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#972356",endColorstr="#003d85",GradientType=1);*/
   overflow: overlay;
 }
 
@@ -317,15 +276,16 @@ p {
 }
 
 @font-face {
-  font-family: pacificofont;
-  src: url("../assets/fonts/Pacifico-Regular.ttf");
+  font-family: paradiso;
+  src: url("../assets/fonts/Paradiso\ Bold.ttf");
 }
 div > h3 {
   margin: 30px 0 20px 0;
 }
 
 div > h3 > span {
-  font-family: pacificofont, cursive;
+  font-family: paradiso, cursive;
+  color: black;
 }
 
 /*########################## HomeScreen ##########################*/
@@ -430,7 +390,7 @@ div > h3 > span {
   align-items: center;
   flex-direction: row;
 }
-
+/*########################## DropDown Menu Style (Different Media) ##########################*/
 #dropdown-menu {
   background-color: rgb(0, 0, 0, 0.6);
   list-style-type: none;
@@ -469,12 +429,14 @@ div > h3 > span {
   border-radius: 20px;
   background-color: white;
 }
+
 .franch,
 .home-text03,
 .home-text04,
 .home-text05 {
   display: none;
 }
+/*########################## Screen Width Appropriate Style ##########################*/
 @media (min-width: 768px) {
   .franch,
   .home-text03,
@@ -657,6 +619,7 @@ a > p {
 .sm-logos {
   display: flex;
 }
+/*########################## Stilimi i index.hmtl (Continue as a guest site) ##########################*/
 .card {
   background-color: rgb(0, 0, 0, 0.4);
   border-radius: 30px;
@@ -687,29 +650,6 @@ a > p {
 a.hovertext {
   position: relative;
 }
-
-.heart-button {
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 30px;
-  height: 30px;
-  outline: none;
-}
-
-.heart-button::before {
-  content: "\2665";
-  font-size: 30px;
-  color: #fff;
-}
-
-.heart-button.clicked::before {
-  color: #ff0000;
-}
-
 .cpright::after {
   content: " ©";
 }

@@ -48,9 +48,6 @@
             overflow-x: visible;
         }
 
-        /* p, h4, address, a, i, span{
-            color: white;
-        } */
         .col-sm-4 {
             text-align: center;
         }
@@ -77,35 +74,13 @@
             color: rgb(0, 0, 0, 0.9);
             margin: 0 2% 1% 0;
         }
-
-        /* audio::-webkit-media-controls-panel {
-            background-color: rgb(0, 0, 0, 0.5);
-            color: rgb(0, 0, 0, 0.1);
-        } */
     </style>
 </head>
 
 <body>
     <div id="header"></div>
-    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-muted"
-        style="height: 70px; background-color: rgba(0, 0, 0, 0.6);">
-        <div class="container-fluid justify-content-between">
-            <div class="d-flex">
-                <a class="navbar-brand me-2 mb-1 d-flex align-items-center" href="home.html">
-                    <img src="assets/img/logo.png" height="40" alt="MDB Logo" loading="lazy" style="margin-top: 2px;" />
-                </a>
-            </div>
-            <ul class="navbar-nav flex-row d-none d-md-flex">
-                <div class="home-left">
-                    <div class="home-links1">
-                        <a href="movies.html"><span class="home-text04 Link">Movies</span></a>
-                        <a href="tv_shows.html"><span class="home-text03 Link">TV-Shows</span></a>
-                        <a href="imdb.html"><span class="home-text05 Link">IMDb</span></a>
-                    </div>
-                </div>
-            </ul>
-        </div>
-    </nav> -->
+
+
     <video loop="loop" muted="muted" autoplay="autoplay" src="assets/videos/FLIXFeast.mp4">
         <source type="video/mp4">
     </video>
@@ -227,12 +202,6 @@
         </svg>
     </div>
 
-    <div>
-        <p>Click "Test" to get every number between that number and 100:</p>
-        <p><input type="number" id="ageToCheck" value="30"></p>
-        <button onclick="myFunction()">Test</button>
-        <p id="array"></p>
-    </div>
     <div id="wrapper">
         <canvas id="canvas">
     </div>
@@ -245,44 +214,8 @@
     <p id="match"></p>
     <br><br><br>
     <div id="footer"></div>
-    <!-- <footer id="footer">
-    <div class="container">
-        <div class="row" style="padding-top: 3%;">
-            <div class="col-sm-4">
-                <h4 style="color:white">Contact Us</h4>
-                <p style="margin: 0; color:white;" style="color:white">Email: FlixFeast@gmail.com</p>
-                <p style="margin: 0; color:white;" style="color:white">Phone: +383 44 123 321</p>
-                <address style="color:white">Address: Everywhere</address>
-            </div>
-            <div class="col-sm-4">
-                <h4 style="color:white">About Us</h4>
 
-                <p style="margin: 0; color:white;" style="color:white">FlixFeast is a movie streaming website with a huge selection
-                    of popular films and TV shows. Sign up for a free trial and start watching today!</p>
-            </div>
-            <div class="col-sm-4">
-                <h4 style="color:white">Follow Us</h4>
-                <p style="margin: 0; color:white;" style="color:white">Stay up to date with our latest news and updates</p>
-                <ul class="list-unstyled">
-                    <li><a href="#" style="color:white">Twitter</a></li>
-                    <li><a href="#" style="color:white">Facebook</a></li>
-                    <li><a href="#" style="color:white">Instagram</a></li>
-                    <li><a href="#" style="color:white">LinkedIn</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="copyright">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                        <abbr><i style="color:white">Copyright 2023 Your Company. All rights <span class="cpright" style="color:white"> reserved.
-                                </span></i></abbr>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer> -->
+
     <script type="text/javascript" src="js/jquery.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
@@ -382,7 +315,8 @@
         console.log("Filmat: ", films2);
         //until here
 
-
+        //############################################################################################################
+        //Drag and Drop
         dragElement(document.getElementById("mydiv"));
 
         function dragElement(elmnt) {
@@ -425,20 +359,14 @@
                 document.onmousemove = null;
             }
         }
+        //until here
 
-        function checkAge(age) {
-            for (var i = document.getElementById("ageToCheck").value; i <= 100; i++) {
-                age.push(i);
-            }
-            return age;
-        }
 
-        function myFunction() {
-            document.getElementById("array").innerHTML = filter(checkAge);
-        }
+        //############################################################################################################
+        //blinking circle animation / start 
         let canvas = document.getElementById("canvas");
-        canvas.width = 500;
-        canvas.height = 500;
+        canvas.width = 250;
+        canvas.height = 250;
 
         let context = canvas.getContext("2d");
 
@@ -467,12 +395,13 @@
 
             context.clearRect(0, 0, canvas.width, canvas.height);
             context.beginPath();
-            context.arc(250, 250, size, 0, 2 * Math.PI, false);
+            context.arc(125, 125, size, 0, 2 * Math.PI, false);
             context.stroke();
 
             window.requestAnimationFrame(animate);
         }
         window.requestAnimationFrame(animate);
+        //end
     </script>
 </body>
 
