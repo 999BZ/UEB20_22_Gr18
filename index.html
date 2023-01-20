@@ -11,15 +11,17 @@
 	<link rel="shortcut icon" href="assets/img/logotab.png">
 	<link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
 	<style>
+		/* Stilizimi i kartave informuese */
 		.explore-cards {
 			justify-content: center;
 		}
 
-
+		/* Stilizimi i faqes me fontin Rubik */
 		* {
 			font-family: 'Rubik';
 		}
 
+		/* Stilizimi butonave browse tek kartat informuese */
 		.btn {
 			background-color: black;
 			border: 0;
@@ -27,6 +29,7 @@
 			align-items: center;
 		}
 
+		/* Stilizimi i textit ne kartat informuese */
 		.card-body {
 			display: flex;
 			flex-direction: column;
@@ -34,6 +37,7 @@
 			align-items: center;
 		}
 
+		/* Stilizimi kur bejm hover tek butonat browse */
 		.btn:hover {
 			background-color: rgb(171, 171, 171);
 			color: black;
@@ -43,8 +47,11 @@
 
 <body
 	style="background-image: url(assets/img/Index/index-bg.png); background-size: cover; background-repeat: no-repeat;">
+	<!-- Thirrja e headerit funksionin jquery load -->
 	<div id="header"></div>
+	<!--  -->
 	<div class="explore-cards" style="margin-top: 3%;">
+		<!-- Karta informuese per MOVIES -->
 		<div class="card" style="width: 20%; margin: 30px;">
 			<img src="assets/img/Index/movies.jpg" class="card-img-top" alt="..." style="margin-left: 0;">
 			<div class="card-body">
@@ -58,6 +65,7 @@
 			</div>
 		</div>
 		<div class="card" style="width: 20%; margin: 30px;">
+			<!-- Karta informuese per TV SHOWS -->
 			<img src="assets/img/Index/tv-shows.jpg" class="card-img-top" alt="..." style="margin-left: 0;">
 			<div class="card-body">
 				<h5 class="card-title">TV-Shows</h5>
@@ -70,6 +78,7 @@
 			</div>
 		</div>
 		<div class="card" style="width: 20%; margin: 30px;">
+			<!-- Karta informuese per IMDB -->
 			<img src="assets/img/Index/IMDb.jpg" class="card-img-top" alt="..." style="margin-left: 0;">
 			<div class="card-body">
 				<h5 class="card-title">IMDb</h5>
@@ -82,11 +91,13 @@
 			</div>
 		</div>
 	</div>
+	<!-- Thirrja e footerit funksionin jquery load -->
 	<div id="footer"></div>
 	<script src="https://code.jquery.com/jquery-3.3.1.js"
 		integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
 		</script>
 	<script>
+		// Load i header.html dhe footer.html
 		$(function () {
 			$("#header").load("header.html");
 			$("#footer").load("footer.html");
