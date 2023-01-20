@@ -680,6 +680,8 @@ a > p {
 
 .franch {
   color: black;
+  margin: 9px;
+  font-weight: 500;
 }
 
 a.hovertext {
