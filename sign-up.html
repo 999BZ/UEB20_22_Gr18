@@ -64,19 +64,20 @@
             </div>
             <div class="fields inputs">
                 <input type="password" id="password-field" class="field input" required placeholder="Password"
-                    onkeyup="verifyPassword()">
+                    onkeyup="checkPassword(); verifyPassword()">
+                <p id="passCheck"></p>
             </div>
             <div class="fields inputs">
                 <input type="password" id="password-field2" class="field input" required placeholder="Confirm Password"
                     onkeyup="verifyPassword()">
-                <p id="notTheSame"></p>
+                <p id="isItSame"></p>
             </div>
             <div class="fields">
                 <button type="submit" value="Submit" id="sign-up" class="field sign-up"
                     onclick="check()">Submit</button>
             </div>
             <div class="infos">
-                <label class="checkbox">Remember Me <input type="checkbox" checked></label>
+                <label class="checkbox">Remember Me<input type="checkbox" checked></label>
             </div>
         </form>
         <p class="or-options"><mark style="background-color: rgb(0, 0, 0, 0.1); border-radius: 20px;"> - Or Sign Up With
@@ -133,9 +134,36 @@
             }
         }
 
+        function checkPassword(){
+            const submit = document.getElementById("sign-up");
+            const pass = document.getElementById("password-field").value;
+            const p = document.getElementById("passCheck");
+            var a = 0, b = 0, i = 0;
+            while (i <= pass.length){
+                if (!isNaN(pass.charAt(i) * 1)){
+                    a++;
+                }
+                if (pass.charAt(i) == pass.charAt(i).toUpperCase() && isNaN(pass.charAt(i) * 1)) {
+                    b++;
+                }
+                i++;
+            }
+
+            if(pass.length == 0){
+                p.innerHTML = "";
+            }
+            else if(a == 0 || b == 0 || pass.length < 8){
+                p.innerHTML = "Password must be at least 8 characters long, must contain at least one number and one capital letter.";
+            }
+            else{
+                p.innerHTML = "";
+            }
+            
+        }
+
         function verifyPassword() {
             const submit = document.getElementById("sign-up");
-            const mesazhi = document.getElementById("notTheSame");
+            const mesazhi = document.getElementById("isItSame");
             const password = document.getElementById("password-field").value;
             const password2 = document.getElementById("password-field2").value;
             mesazhi.innerHTML = "";
